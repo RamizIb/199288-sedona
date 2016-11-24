@@ -1,6 +1,6 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Lazy Admin](https://up.htmlacademy.ru/adaptive/9/user/199288).
+* Студент: [Рамиз Ибрагимов](https://up.htmlacademy.ru/adaptive/9/user/199288).
 * Наставник: [Филипп Шамсиев](https://htmlacademy.ru/profile/id70260).
 
 ---
