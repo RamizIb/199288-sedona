@@ -11,21 +11,23 @@
   <header class="header">
 
     <div class="logo">
-      <img class="img" src="http://placehold.it/100x60" width="" height="" alt="">
+      <a href="index.html"><img class="img" src="http://placehold.it/100x60" width="" height="" alt=""></a>
     </div>
 
     <nav class="nav">
-      <a class="nav__link nav__link--active" href="#">Главная</a>
+      <a class="nav__link" href="#">Главная</a>
       <a class="nav__link" href="#">Фото и видео</a>
-      <a class="nav__link" href="#">Форма отзыва</a>
+      <a class="nav__link" nav__link--active" href="#">Форма отзыва</a>
       <a class="nav__link" href="#">HTML Academy</a>
     </nav>
+
+    <button class="button button--nav" type="button" ></button>
 
   </header>
 
   <main>
 
-    <div class="intro">
+    <div class="intro intro--form">
       <img class="img" src="https://placehold.it/320x240" width="" height="" alt="">
     </div>
 
@@ -34,102 +36,128 @@
       <p class="intro-features__text">Помогите нашим отелям стать лучше, оставьте отзыв о них, а также о посещенных Вами достопримечательностях</p>
     </div>
 
-    <form class="form-buyer" action="#" method="post">
+    <div class="feedback">
+      <form class="form" action="#" method="post">
 
-      <fieldset class="form-name">
+        <fieldset class="form-block">
 
-        <legend class="form-name__title">Представьтесь:</legend>
+          <h3 class="form-block__title">Представьтесь:</h3>
 
-        <label class="form-name__first-name-input">
-          Имя*:
-          <input type="text" name="first-name"  placeholder="Петр"  id="" required>
-        </label>
+          <div class="form-field">
+            <label class="form-label" for="first-name" >Имя*:</label>
+            <input class="form-input" type="text" id="first-name" placeholder="Петр" required>
+          </div>
 
-        <label class="form-name__last-name-input">
-          Фамилия*:
-          <input type="text" name="last-name" placeholder="Иванов" id="" required>
-        </label>
+          <div class="form-field">
+            <label class="form-label" for="last-name">Фамилия*:</label>
+            <input class="form-input" type="text" id="last-name" placeholder="Иванов" required>
+          </div>
 
-        <label class="form-name__middle-name-input">
-          Отчество
-          <input type="text" name="middle-name" placeholder="Александрович" id="">
-        </label>
+          <div class="form-field">
+            <label class="form-label" for="middle-name">Отчество</label>
+            <input class="form-input" type="text" id="middle-name" placeholder="Александрович">
+          </div>
 
-      </fieldset>
+        </fieldset>
 
-      <fieldset class="form-contact">
+        <fieldset class="form-block">
 
-        <legend class="form-contact__title">Контактная информация:</legend>
+          <h3 class="form-block__title">Контактная информация:</h3>
 
-        <label class="form-contact__tel">
-          Контактный телефон*:
-          <input type="tel" name="tel" placeholder="Введите телефон" id="" required pattern="[0-9]{3}-[0-9]{5}"><span class="tel-after">&#9990;</span>
-        </label>
+          <div class="form-field">
+            <label class="form-label" for="tel">Контактный телефон*:</label>
+            <input class="form-input" type="tel" id="tel" placeholder="Введите телефон" required pattern="[0-9]{3}-[0-9]{5}"><span class="tel-after"></span>
+            <span class="alert">Ошибка, перепроверьте номер</span>
+          </div>
 
-        <label class="form-contact__email">
-          Электронная почта*:
-          <input type="email" name="email" placeholder="Введите e-mail" id="" required><span class="email-after">&#9993;</span>
-        </label>
+          <div class="form-field">
+            <label class="form-label" for="email">Электронная почта*:</label>
+            <input class="form-input" type="email" id="email" placeholder="Введите e-mail" required><span class="email-after"></span>
+          </div>
 
-      </fieldset>
+        </fieldset>
 
-      <fieldset class="form-review">
+        <fieldset class="form-block">
 
-        <legend class="form-review__title">Ваше общее впечатление:</legend>
+          <h3 class="form-block__title">Ваше общее впечатление:</h3>
 
-        <label class="form-review__input">
-          <input type="radio">Скорее положительное
-        </label>
+          <div class="form-field">
+            <input class="form-input" type="radio" name="impression" value="Скорее положительное" id="positive" checked>
+            <label class="form-label" for="positive">Скорее положительное</label>
+          </div>
 
-        <label class="form-review__input">
-          <input type="radio">Скорее отрицательное
-        </label>
+          <div class="form-field">
+            <input class="form-input" type="radio" name="impression" value="Скорее отрицательное" id="negative">
+            <label class="form-label" for="negative">Скорее отрицательное</label>
+          </div>
 
-        <label class="form-review__input">
-          <input type="radio">Затрудняюсь ответить
-        </label>
+          <div class="form-field">
+            <input class="form-input" type="radio" name="impression" value="Затрудняюсь ответить" id="neutral">
+            <label class="form-label" for="neutral">Затрудняюсь ответить</label>
+          </div>
 
-      </fieldset>
 
-      <fieldset class="form-review">
+        </fieldset>
 
-        <legend class="form-review__title">Посещенные достопримечательности:</legend>
+        <fieldset class="form-block">
 
-        <label class="form-review__input">
-          <input type="checkbox">Мост Дьявола
-        </label>
+          <h3 class="form-block__title">Посещенные достопримечательности:</h3>
 
-        <label class="form-review__input">
-          <input type="checkbox">Слайд-парк
-        </label>
+          <div class="form-field">
+            <input class="form-input" type="checkbox" value="Мост Дьявола" id="bridge" checked>
+            <label class="form-label" for="bridge">Мост Дьявола</label>
+          </div>
 
-        <label class="form-review__input">
-          <input type="checkbox">Гора-Колокол
-        </label>
+          <div class="form-field">
+            <input class="form-input" type="checkbox" value="Слайд-парк" id="park" checked>
+            <label class="form-label" for="park">Слайд-парк</label>
+          </div>
 
-        <label class="form-review__input">
-          <input type="checkbox">Красные скалы
-        </label>
+          <div class="form-field">
+            <input class="form-input" type="checkbox" value="Гора-Колокол" id="mountain">
+            <label class="form-label" for="mountain">Гора-Колокол</label>
+          </div>
 
-      </fieldset>
+          <div class="form-field">
+            <input class="form-input" type="checkbox" value="Красные скалы" id="rock" checked>
+            <label class="form-label" for="rock">Красные скалы</label>
+          </div>
 
-      <fieldset class="form-opinion">
+        </fieldset>
 
-        <legend class="form-opinion__title">Опишите свои эмоции:</legend>
+        <fieldset class="form-block">
 
-        <textarea class="form-opinion__text" placeholder="Опишите подробно все свои восторги"></textarea>
+          <h3 class="form-block__title">Опишите свои эмоции:</h3>
 
-        <button class="form-button" type="submit">Отправить отзыв</button>
+          <div class="opinion">
+            <textarea placeholder="Опишите подробно все свои восторги"></textarea>
+          </div>
 
-      </fieldset>
+          <button class="button" type="submit">Отправить отзыв</button>
 
-    </form>
+        </fieldset>
+
+      </form>
+
+      <div class="call-to-action call-to-action--error">
+        <h2 class="call-to-action__title">Что-то пошло не так!</h2>
+        <p class="call-to-action__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <button class="button button--alert" type="button">Ок</button>
+      </div>
+
+      <div class="call-to-action call-to-action--success">
+      <h2 class="call-to-action__title">Ваш отзыв отправлен!</h2>
+        <p class="call-to-action__text">Спасибо за Ваше участие, Ваш отзыв уже поступил к нам, в ближайшее время мы опубликуем его на сайте</p>
+        <button class="button" type="button">Ок</button>
+      </div>
+
+    </div>
 
   </main>
 
   <footer class="footer">
 
-    <div class="footer__item">#VisitSedona</div>
+    <div class="footer-item">#VisitSedona</div>
 
     <div class="footer-social">
       <a class="footer-social__link" href="#">Twitter</a>
@@ -139,7 +167,7 @@
 
     <div class="footer-copyright">
       Разработано
-      <img class="logo--copyright" src="https://placehold.it/30x30" width="" height="" alt="">
+      <img class="logo logo--copyright" src="https://placehold.it/30x30" width="" height="" alt="">
     </div>
 
   </footer>
