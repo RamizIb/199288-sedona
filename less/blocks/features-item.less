@@ -1,0 +1,26 @@
+.features-item {
+  padding-bottom: 5px;
+}
+
+.features-item__title {
+  position: relative;
+  font-size: 21px;
+  text-transform: uppercase;
+}
+
+.features-item__text {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.features-item__title::before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    width: 35px;
+    height: 40px;
+    background: url(../../img/icon-burger.svg) no-repeat;
+    background-size: contain;
+    color: blue;
+}
