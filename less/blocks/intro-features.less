@@ -1,17 +1,28 @@
 .intro-features {
-  height: 250px;
-  width: auto;
+  position: relative;
+  padding: 20px;
+  line-height: 26px;
+}
+
+.intro-features::after {
+  position: absolute;
+  content: " ";
+  bottom:  -10%;
+  left: 0;
+  height: 40px;
+  width: 100%;
+  background: url(../img/bg-triangle.svg) no-repeat;
 }
 
 .intro-features__title {
   font-size: 18px;
   font-weight: bold;
   text-align: center;
-  padding: 20px 30px;
+  margin: 20px 10px;
 }
 
 .intro-features__text {
   font-size: 14px;
   text-align: center;
-  padding: 10px 30px;
+  margin-top: 20px;
 }
