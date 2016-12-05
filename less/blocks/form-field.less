@@ -2,7 +2,6 @@
   display: flex;
   padding: 0;
   line-height: 26px;
-  justify-content: space-between;
   align-items: baseline;
 }
 
@@ -10,17 +9,23 @@
   margin: 0 5px;
   margin-bottom: 10px;
   font-size: 14px;
+  line-height: 26px;
   text-transform: uppercase;
-  color: grey;
+  color: #333333;
 }
 
 .form-field__input {
-  flex-grow: 1;
   margin: 0 5px;
   margin-bottom: 10px;
-  padding: 15px;
+  padding: 15px 0 15px 10px;
+  font-size: 18px;
+  line-height: 26px;
   border: none;
   background-color: #f2f2f2;
+}
+
+.form-field__input-name {
+  flex-grow: 1;
 }
 
 .form-field--contact {
