@@ -8,16 +8,18 @@
 
 .nav__link {
   display: block;
-  background-color: #81b3d2;
-  color: #fff;
+  padding: 7px 0;
   font-size: 18px;
   font-weight: bold;
   line-height: 40px;
-  text-transform: uppercase;
-  text-decoration: none;
+  color: #fff;
+  background-color: #81b3d2;
   border-bottom: 1px solid #678fa8;
   border-top: 1px solid #9ac2db;
-  padding: 7px 0;
+  text-transform: uppercase;
+  text-decoration: none;
+
+
 }
 
 .nav__link:first-child {
@@ -26,4 +28,29 @@
 
 .nav__link:last-child {
   border-bottom: none;
+}
+
+@media (min-width: 768px) {
+
+  .nav {
+    display: flex;
+    top: 0;
+    position: static;
+
+  }
+
+  .nav__link {
+    margin: 7px 15px;
+    width: 20%;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: bold;
+    border: none;
+    background-color: #ffffff;
+    color: #000000;
+  }
+
+  .nav__link:nth-of-type(2) {
+    margin-right: 100px;
+  }
 }

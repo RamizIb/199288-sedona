@@ -1,32 +1,39 @@
 .intro-features {
   padding: 0;
-  padding-top: 10px;
   line-height: 26px;
+  text-align: center;
 }
 
 .intro-features__title {
-  margin: 20px;
-  padding: 0 10px;
+  margin: 30px;
   font-size: 18px;
   font-weight: bold;
-  text-align: center;
   text-transform: uppercase;
 }
 
 .intro-features__text {
   margin: 20px;
-  margin-bottom: 0;
   font-size: 14px;
-  text-align: center;
   color: #333333;
   text-transform: uppercase;
 }
 
-.intro-features__text--color {
-  margin: 0 2px;
+.intro-features--photo .intro-features__text {
   line-height: 24px;
+  margin-bottom: 30px;
+  padding: 0 2px;
 }
 
 .intro-features__text--form {
   line-height: 24px;
+}
+
+@media (min-width: 768px) {
+
+  .intro-features {
+    padding: 40px 0;
+  }
+  .intro-features__title {
+    font-size: 21px;
+  }
 }
