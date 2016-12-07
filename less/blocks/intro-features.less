@@ -1,27 +1,29 @@
 .intro-features {
+  width: 100%;
   padding: 0;
   line-height: 26px;
   text-align: center;
 }
 
 .intro-features__title {
-  margin: 30px;
+  width: 70%;
+  margin: 6% auto;
   font-size: 18px;
   font-weight: bold;
   text-transform: uppercase;
 }
 
 .intro-features__text {
-  margin: 20px;
+  width: 70%;
+  margin: 6% auto;
   font-size: 14px;
   color: #333333;
   text-transform: uppercase;
 }
 
 .intro-features--photo .intro-features__text {
+  width: 90%;
   line-height: 24px;
-  margin-bottom: 30px;
-  padding: 0 2px;
 }
 
 .intro-features__text--form {
@@ -30,10 +32,13 @@
 
 @media (min-width: 768px) {
 
-  .intro-features {
-    padding: 40px 0;
-  }
   .intro-features__title {
     font-size: 21px;
+  }
+
+  .intro-features--photo .intro-features__text {
+    width: 55%;
+    margin: 0 auto;
+    margin-bottom: 5%;
   }
 }

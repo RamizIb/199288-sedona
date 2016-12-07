@@ -16,12 +16,20 @@
       <a href="index.html"><img class="logo__img" src="img/logo-sedona-mobile.svg" width="" height="" alt=""></a>
     </div>
 
-    <nav class="nav">
-      <a class="nav__link" href="index.html">Главная</a>
-      <a class="nav__link nav__link--active" href="photo.html">Фото и видео</a>
-      <a class="nav__link" href="form.html">Форма отзыва</a>
-      <a class="nav__link" href="#">HTML Academy</a>
-    </nav>
+    <ul class="nav">
+      <li class="nav-item">
+        <a class="nav__link" href="index.html">Главная</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav__link nav__link--active" href="photo.html">Фото и видео</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav__link" href="form.html">Форма отзыва</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav__link" href="#">HTML Academy</a>
+      </li>
+    </ul>
 
     <button class="button button--nav" type="button" ></button>
     <div class="clear"></div>
@@ -36,14 +44,14 @@
 
     <div class="intro-features intro-features--photo">
       <h2 class="intro-features__title">Фото и видео</h2>
-      <p class="intro-features__text">Не можете решиться на путешествие из-за курса? Фотографии помогут Вам забыть о политике и экономимке.</p>
+      <p class="intro-features__text">Не можете решиться на путешествие из-за курса?<br>Фотографии помогут Вам забыть о политике и экономимке.</p>
     </div>
 
     <article class="photo-box">
       <a class="photo-box__link" href="#">
         <img class="photo-box__img" src="img/photo-1-mobile@1x.jpg" width="280" height="280" alt="">
       </a>
-      <h3 class="photo-box__title">Народные просторы</h3>
+      <h3 class="photo-box__title">Неродные просторы</h3>
       <p class="photo-box__author">Автор фото: Борис</p>
       <p class="photo-box__like-number">
         <span class="photo-box__icon"></span>
@@ -51,29 +59,31 @@
       </p>
     </article>
 
-    <article class="photo-box">
-      <a class="photo-box__link" href="#">
-        <img class="photo-box__img" src="img/photo-2-mobile@1x.jpg" width="280" height="280" alt="">
-      </a>
-      <h3 class="photo-box__title">Местная растительность</h3>
-      <p class="photo-box__author">Автор фото: Сергей</p>
-      <p class="photo-box__like-number">
-        <span class="photo-box__icon"></span>
-        143
-      </p>
-    </article>
+    <div class="photo-box-wrapper">
+      <article class="photo-box">
+        <a class="photo-box__link" href="#">
+          <img class="photo-box__img" src="img/photo-2-mobile@1x.jpg" width="280" height="280" alt="">
+        </a>
+        <h3 class="photo-box__title">Местная растительность</h3>
+        <p class="photo-box__author">Автор фото: Сергей</p>
+        <p class="photo-box__like-number">
+          <span class="photo-box__icon"></span>
+          143
+        </p>
+      </article>
 
-    <article class="photo-box">
-      <a class="photo-box__link" href="#">
-        <img class="photo-box__img" src="img/photo-3-mobile@1x.jpg" width="280" height="280" alt="">
-      </a>
-      <h3 class="photo-box__title">Дорога на север</h3>
-      <p class="photo-box__author">Автор фото: Петр</p>
-      <p class="photo-box__like-number">
-        <span class="photo-box__icon"></span>
-        96
-      </p>
-    </article>
+      <article class="photo-box">
+        <a class="photo-box__link" href="#">
+          <img class="photo-box__img" src="img/photo-3-mobile@1x.jpg" width="280" height="280" alt="">
+        </a>
+        <h3 class="photo-box__title">Дорога на север</h3>
+        <p class="photo-box__author">Автор фото: Петр</p>
+        <p class="photo-box__like-number">
+          <span class="photo-box__icon"></span>
+          96
+        </p>
+      </article>
+    </div>
 
     <article class="photo-box">
       <a class="photo-box__link" href="#">
@@ -92,7 +102,7 @@
       <p class="intro-features__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
     </div>
 
-    <video class="video-features" width="320" height="201" poster="img/video-mobile@1x.jpg">
+    <video class="video-features" poster="img/video-mobile@1x.jpg">
     <div class="video-features__control"></div>
     </video>
 
@@ -110,7 +120,7 @@
 
     <div class="footer-copyright">
       Разработано
-      <img class="logo logo--copyright" src="img/logo-htmlacademy.svg" width="" height="" alt="">
+      <a href="index.html"><img class="logo logo--copyright" src="img/logo-htmlacademy.svg" width="" height="" alt=""></a>
     </div>
 
   </footer>
