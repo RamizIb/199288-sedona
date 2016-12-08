@@ -10,13 +10,25 @@
   color: #ffffff;
   background-color: #81b3d2;
   text-transform: uppercase;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+  }
 }
 
-.button--nav {
+.button--nav-closed {
   float: right;
   height: 21px;
   width: 23px;
   margin: 17.5px 20px;
+  cursor: pointer;
+  background-color: transparent;
+  background-image: url(../../img/icon-menu.svg);
+  background-repeat: no-repeat;
 }
 
 .button--form {
@@ -42,9 +54,12 @@
     margin: 5% auto;
   }
 
-  .button--nav {
+  .button--nav-closed {
     display: none;
   }
 
-
+  .button--form {
+    width: 50%;
+    margin-left: 0;
+  }
 }

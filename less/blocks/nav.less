@@ -27,7 +27,16 @@ ul {
   background-color: #81b3d2;
   text-transform: uppercase;
   text-decoration: none;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+  }
 }
+
 
 li:first-child {
   border-top: none;
@@ -63,5 +72,15 @@ li:last-child {
     font-weight: bold;
     background-color: #ffffff;
     color: #000000;
+
+    &:hover {
+      color: #669ec0;
+      background-color: transparent;
+  }
+
+    &:active {
+      color: #5496bd;
+      background-color: transparent;
+    }
   }
 }
