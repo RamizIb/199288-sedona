@@ -57,19 +57,38 @@
   .form-block--emotions {
     position: relative;
     width: 100%;
+    padding: 60px 0;
     order: 4;
   }
 
   .form-block--emotions .form-block__title {
-    margin: 60px auto;
+    margin: 0 auto;
+    margin-bottom: 60px;
   }
 
   .form-block--emotions::after {
     content: "*ОБЯЗАТЕЛЬНЫЕ ПОЛЯ";
     position: absolute;
     right: 0;
-    bottom: 64px;
+    bottom: 80px;
     font-size: 14px;
     color: #333333;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .form-block--experience .form-block__title {
+    text-align: center;
+  }
+
+  .form-block--contact {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .form-block--contact .form-block__title {
+    width: 100%;
   }
 }

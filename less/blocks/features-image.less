@@ -1,10 +1,7 @@
-.features-image {
-  height: 260px;
-}
-
 .features-image img {
-  height: 260px;
+  display: block;
   width: 100%;
+  height: 258px;
 }
 
 @media (min-width: 768px) {
@@ -18,11 +15,7 @@
     width: 67%;
   }
 
-  .features-image-wrapper .features {
-    order: 0;
-  }
-
-  .features-image-wrapper:nth-child(5) .features {
-    order: 1;
+  .features-image--replace {
+    order: -1;
   }
 }

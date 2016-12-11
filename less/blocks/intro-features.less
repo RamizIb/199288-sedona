@@ -1,4 +1,5 @@
 .intro-features {
+  position: relative;
   padding-top: 40px;
   padding-bottom: 30px;
   line-height: 26px;
@@ -31,9 +32,26 @@
   line-height: 24px;
 }
 
+.intro-features::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: -10px;
+  height: 40px;
+  background-image: url(../img/bg-triangle.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 @media (min-width: 768px) {
 
+  .intro-features {
+    padding: 50px 0;
+  }
+
   .intro-features__title {
+    width: 60%;
     font-size: 21px;
   }
 
@@ -65,11 +83,19 @@
   .intro-features--photo .intro-features__text {
     width: 55%;
   }
+
+  .intro-features::after {
+  display: none;
+  }
 }
 
 @media (min-width: 1200px) {
 
-  .intro-features__title {
-    width: 50%;
+  .intro-features__text--photo {
+    width: 37%;
+  }
+
+  .intro-features--photo .intro-features__text {
+    width: 37%;
   }
 }

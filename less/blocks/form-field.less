@@ -37,7 +37,6 @@
 
 .form-field__input--contact {
   padding-left: 20px;
-  margin-bottom: 10px;
 }
 
 .form-field__alert {
@@ -110,7 +109,7 @@ fieldset {
   .form-field {
     display: flex;
     width: 100%;
-    margin: 20px auto;
+    margin-bottom: 20px;
   }
 
   .form-field-visited-wrapper {
@@ -136,5 +135,31 @@ fieldset {
 
   textarea {
     height: 160px;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .form-field--contact {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .form-field--contact:first-of-type {
+    width: 40%;
+    margin-left: 0;
+  }
+
+  .form-field--contact:last-of-type {
+    width: 50%;
+    margin-right: 0;
+  }
+
+  .form-field__alert  {
+    display: none;
+  }
+
+  .form-field__label--contact {
+    margin: 0;
   }
 }

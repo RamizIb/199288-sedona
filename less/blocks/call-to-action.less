@@ -46,6 +46,9 @@
 
   .call-to-action {
     width: 100%;
+    padding: 0;
+    padding-top: 50px;
+    padding-bottom: 60px;
   }
 
   .call-to-action__title {
@@ -54,7 +57,9 @@
   }
 
   .call-to-action__text {
-    margin: 5% 15%;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 45px;
   }
 
   .call-to-action--alert {
@@ -63,5 +68,12 @@
 
   .call-to-action--success {
     display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .call-to-action__text {
+    width: 45%;
   }
 }
