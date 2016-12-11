@@ -1,10 +1,12 @@
 .form-field {
   display: flex;
+  margin: 0 auto;
   align-items: baseline;
   line-height: 26px;
 }
 
 .form-field__label {
+  margin-right: 10px;
   font-size: 14px;
   line-height: 26px;
   text-transform: uppercase;
@@ -12,47 +14,78 @@
 }
 
 .form-field__input {
+  width: 100%;
   margin: 0 auto;
-  padding: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   font-size: 18px;
   line-height: 26px;
   border: none;
+  box-sizing: border-box;
   background-color: #f2f2f2;
 }
 
 .form-field--contact {
   display: flex;
   flex-direction: column;
-  align-items: stretch;
 }
 
 .form-field__label--contact {
-  margin-left: 30px;
-
+  margin: 0;
+  margin-left: 20px;
+  margin-bottom: 10px;
 }
 
 .form-field__input--contact {
-  margin-right: 20px;
-  margin-left: 20px;
+  padding-left: 20px;
+  margin-bottom: 10px;
 }
 
 .form-field__alert {
-  margin-left: 30px;
+  margin-left: 20px;
+  margin-bottom: 10px;
   color: red;
   font-size: 14px;
 }
 
 .form-field__input--experience {
-  margin: 20px;
-  margin-left: 35px;
+  display: none;
 }
 
 .form-field__label--experience {
-  margin-left: 20px;
+  width: 100%;
+  margin: 0;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 50px;
   font-size: 18px;
   text-transform: none;
   font-weight: bold;
   color: black;
+}
+
+input {
+  padding: 0;
+  /* font-weight: bold; */
+}
+
+textarea {
+  margin:0;
+  padding: 0;
+  padding-top: 20px;
+  padding-left: 20px;
+  width: 100%;
+  height: 120px;
+  display: block;
+  border: none;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+fieldset {
+  padding: 0;
+  margin: 0;
 }
 
 @media (min-width: 768px) {
