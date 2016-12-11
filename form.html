@@ -49,7 +49,7 @@
     <div class="feedback">
       <form class="form" action="#" method="post">
 
-        <fieldset class="form-block">
+        <fieldset class="form-block  form-block--name">
 
           <h2 class="form-block__title">Представьтесь:</h2>
 
@@ -70,7 +70,7 @@
 
         </fieldset>
 
-        <fieldset class="form-block">
+        <fieldset class="form-block  form-block--contact">
 
           <h2 class="form-block__title">Контактная информация:</h2>
 
@@ -89,7 +89,7 @@
 
         </fieldset>
 
-        <fieldset class="form-block">
+        <fieldset class="form-block form-block--experience">
 
           <h2 class="form-block__title">Ваше общее впечатление:</h2>
 
@@ -110,37 +110,39 @@
 
         </fieldset>
 
-        <fieldset class="form-block">
+        <fieldset class="form-block  form-block--visited">
 
           <h2 class="form-block__title">Посещенные достопримечательности:</h2>
 
-          <div class="form-field form-field--experience">
-            <input class="form-field__input form-field__input--experience" type="checkbox" value="Мост Дьявола" id="bridge" checked>
-            <label class="form-field__label form-field__label--experience" for="bridge">Мост Дьявола</label>
-          </div>
+          <div class="form-field-visited-wrapper">
+            <div class="form-field form-field--visited">
+              <input class="form-field__input form-field__input--visited" type="checkbox" value="Мост Дьявола" id="bridge" checked>
+              <label class="form-field__label form-field__label--visited" for="bridge">Мост Дьявола</label>
+            </div>
 
-          <div class="form-field form-field--experience">
-            <input class="form-field__input form-field__input--experience" type="checkbox" value="Слайд-парк" id="park" checked>
-            <label class="form-field__label form-field__label--experience" for="park">Слайд-парк</label>
-          </div>
+            <div class="form-field form-field--visited">
+              <input class="form-field__input form-field__input--visited" type="checkbox" value="Слайд-парк" id="park" checked>
+              <label class="form-field__label form-field__label--visited" for="park">Слайд-парк</label>
+            </div>
 
-          <div class="form-field form-field--experience">
-            <input class="form-field__input form-field__input--experience" type="checkbox" value="Гора-Колокол" id="mountain">
-            <label class="form-field__label form-field__label--experience" for="mountain">Гора-Колокол</label>
-          </div>
+            <div class="form-field form-field--visited">
+              <input class="form-field__input form-field__input--visited" type="checkbox" value="Гора-Колокол" id="mountain">
+              <label class="form-field__label form-field__label--visited" for="mountain">Гора-Колокол</label>
+            </div>
 
-          <div class="form-field form-field--experience">
-            <input class="form-field__input form-field__input--experience" type="checkbox" value="Красные скалы" id="rock" checked>
-            <label class="form-field__label form-field__label--experience" for="rock">Красные скалы</label>
+            <div class="form-field form-field--visited">
+              <input class="form-field__input form-field__input--visited" type="checkbox" value="Красные скалы" id="rock" checked>
+              <label class="form-field__label form-field__label--visited" for="rock">Красные скалы</label>
+            </div>
           </div>
 
         </fieldset>
 
-        <fieldset class="form-block">
+        <fieldset class="form-block  form-block--emotions">
 
           <h2 class="form-block__title">Опишите свои эмоции:</h2>
 
-          <div class="form-field form-field--contact">
+          <div class="form-field form-field--emotions">
             <textarea class="form-field__place" placeholder="Опишите подробно все свои восторги"></textarea>
           </div>
 

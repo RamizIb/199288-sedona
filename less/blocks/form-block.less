@@ -1,12 +1,3 @@
-.form-block {
-  border: none;
-  /* border-bottom: 1px solid #e5e5e5; */
-}
-
-.form-block:first-of-type {
-  /* border-top: 1px solid #e5e5e5; */
-}
-
 .form-block__title {
   margin: 0 auto;
   margin-top: 20px;
@@ -20,66 +11,65 @@
 
 @media (min-width: 768px) {
 
-  .form-block:nth-of-type(1) {
-    width: 50%;
-    order: 0;
-  }
-
-  .form-block:nth-of-type(3) {
-    width: 50%;
-    order: -1;
-  }
-  .form-block:nth-of-type(2) {
-    width: 100%;
-  }
-
   .form-block__title {
     font-size: 21px;
-    margin: 40px auto;
   }
 
-  .form-block:nth-of-type(4) {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 80%;
-    margin: 5% auto;
-  }
-
-  .form-block:nth-of-type(4) .form-field:nth-of-type(1) {
-    order: 0;
-  }
-
-  .form-block:nth-of-type(4) .form-field:nth-of-type(2) {
-    order: 2;
-  }
-
-    .form-block:nth-of-type(4) .form-field:nth-of-type(3) {
+  .form-block--name {
+    width: 45%;
     order: 1;
   }
 
-    .form-block:nth-of-type(4) .form-field:nth-of-type(4) {
+  .form-block--name .form-block__title {
+    margin-bottom: 50px;
+    text-align: left;
+  }
+
+  .form-block--contact {
+    width: 100%;
+    order: 2;
+  }
+
+  .form-block--contact .form-block__title {
+    margin-top: 70px;
+    margin-bottom: 30px;
+  }
+
+  .form-block--experience {
+    width: 45%;
+    order: 0;
+  }
+
+  .form-block--experience .form-block__title {
+    margin-bottom: 50px;
+    text-align: left;
+  }
+
+  .form-block--visited {
+    width: 100%;
     order: 3;
   }
 
-  .form-block:nth-of-type(4) .form-field__label.form-field__label--experience:last-child {
-    margin-bottom: 50px;
-  }
-
-  .form-block:nth-of-type(4) .form-block__title {
-    width: 60%;
-  }
-
-  .form-block:nth-of-type(4) .form-field.form-field--experience {
+  .form-block--visited .form-block__title {
     width: 50%;
-    margin-bottom: 5%;
   }
 
-  .form-block:nth-of-type(5) {
+  .form-block--emotions {
+    position: relative;
     width: 100%;
+    order: 4;
   }
 
-  .form-block:nth-of-type(5) .form-field__place {
-    margin: 0;
+  .form-block--emotions .form-block__title {
+    margin: 60px auto;
+  }
+
+  .form-block--emotions::after {
+    content: "*ОБЯЗАТЕЛЬНЫЕ ПОЛЯ";
+    position: absolute;
+    right: 0;
+    bottom: 64px;
+    font-size: 14px;
+    color: #333333;
   }
 }

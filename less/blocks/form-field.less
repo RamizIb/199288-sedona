@@ -26,7 +26,6 @@
 }
 
 .form-field--contact {
-  display: flex;
   flex-direction: column;
 }
 
@@ -52,7 +51,23 @@
   display: none;
 }
 
+.form-field__input--visited {
+  display: none;
+}
+
 .form-field__label--experience {
+  width: 100%;
+  margin: 0;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 50px;
+  font-size: 18px;
+  text-transform: none;
+  font-weight: bold;
+  color: black;
+}
+
+.form-field__label--visited {
   width: 100%;
   margin: 0;
   margin-top: 15px;
@@ -70,7 +85,8 @@ input {
 }
 
 textarea {
-  margin:0;
+  margin:0 auto;
+  margin-bottom: 40px;
   padding: 0;
   padding-top: 20px;
   padding-left: 20px;
@@ -86,6 +102,7 @@ textarea {
 fieldset {
   padding: 0;
   margin: 0;
+  border: none;
 }
 
 @media (min-width: 768px) {
@@ -93,13 +110,31 @@ fieldset {
   .form-field {
     display: flex;
     width: 100%;
-    margin: 5% auto;
+    margin: 20px auto;
+  }
+
+  .form-field-visited-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  .form-field--visited {
+    width: 40%;
+  }
+
+  .form-field__label--experience {
+    margin-left: 75px;
   }
 
   .form-field__alert {
-    position: relative;
-    top:-85px;
-    right: 20px;
-    text-align: right;
+    order: -1;
+    margin-left: auto;
+    margin-bottom: -26px;
+  }
+
+  textarea {
+    height: 160px;
   }
 }
