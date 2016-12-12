@@ -1,10 +1,9 @@
 .features-item {
-  margin: 0;
-  margin-left: 70px;
+  position: relative;
+  margin: 0 auto;
 }
 
 .features-item__title {
-  position: relative;
   margin: 0;
   margin-bottom: 25px;
   font-size: 18px;
@@ -14,6 +13,7 @@
 }
 
 .features-item__text {
+  width: 80%;
   margin: 0;
   margin-bottom: 35px;
   font-size: 14px;
@@ -22,7 +22,7 @@
   color: #333333;
 }
 
-.features-item__title--home::before {
+.features-item--home::before {
   content: "";
   display: block;
   position: absolute;
@@ -36,7 +36,7 @@
   background-size: 100%;
 }
 
-.features-item__title--gift::before {
+.features-item--gift::before {
   content: "";
   display: block;
   position: absolute;
@@ -51,7 +51,7 @@
 
 }
 
-.features-item__title--food::before {
+.features-item--food::before {
   content: "";
   display: block;
   position: absolute;
@@ -71,7 +71,6 @@
   .features-item {
     width: 33.33%;
     margin: 0;
-    margin-top: 120px;  /* Временно для сетки */
     text-align: center;
   }
 
@@ -86,23 +85,23 @@
     margin: 0 auto;
   }
 
-  .features-item__title--home::before {
+  .features-item--home::before {
     top: -90px;
     left: 50%;
     width: 75px;
+    height: 72px;
+    margin-left: -37.5px;
+}
+
+.features-item--gift::before {
+    top: -90px;
+    left: 50%;
+    width: 64px;
     height: 75px;
     margin-left: -37.5px;
 }
 
-.features-item__title--gift::before {
-    top: -90px;
-    left: 50%;
-    width: 75px;
-    height: 75px;
-    margin-left: -37.5px;
-}
-
-.features-item__title--food::before {
+.features-item--food::before {
     top: -90px;
     left: 50%;
     width: 75px;
@@ -111,6 +110,17 @@
 }
 
   .features-item:nth-child(2) {
-    order: 2;
+    order: 1;
+  }
+
+  .features-item--food .features-item__text {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .features-item--food .features-item__text {
+    width: 75%;
   }
 }
