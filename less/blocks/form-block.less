@@ -1,6 +1,5 @@
 .form-block__title {
   margin: 0 auto;
-  margin-top: 20px;
   margin-bottom: 20px;
   font-size: 18px;
   line-height: 26px;
@@ -9,30 +8,20 @@
   text-transform: uppercase;
 }
 
-@media (min-width: 768px) {
+.form-block {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 
-  .form-block__title {
-    font-size: 21px;
-  }
+.form-block--emotions {
+  padding-bottom: 40px;
+}
+
+@media (min-width: 768px) {
 
   .form-block--name {
     width: 45%;
     order: 1;
-  }
-
-  .form-block--name .form-block__title {
-    margin-bottom: 50px;
-    text-align: left;
-  }
-
-  .form-block--contact {
-    width: 100%;
-    order: 2;
-  }
-
-  .form-block--contact .form-block__title {
-    margin-top: 70px;
-    margin-bottom: 30px;
   }
 
   .form-block--experience {
@@ -40,9 +29,11 @@
     order: 0;
   }
 
-  .form-block--experience .form-block__title {
-    margin-bottom: 50px;
-    text-align: left;
+  .form-block--contact {
+    width: 100%;
+    padding-top: 75px;
+    padding-bottom: 58px;
+    order: 2;
   }
 
   .form-block--visited {
@@ -50,7 +41,25 @@
     order: 3;
   }
 
-  .form-block--visited .form-block__title {
+  .form-block__title {
+    font-size: 21px;
+  }
+
+  .form-block__title--name {
+    margin-bottom: 50px;
+    text-align: left;
+  }
+
+  .form-block__title--contact {
+    margin-bottom: 30px;
+  }
+
+  .form-block__title--experience {
+    margin-bottom: 50px;
+    text-align: left;
+  }
+
+  .form-block__title--visited {
     width: 50%;
   }
 
@@ -61,13 +70,13 @@
     order: 4;
   }
 
-  .form-block--emotions .form-block__title {
+  .form-block__title--emotions {
     margin: 0 auto;
     margin-bottom: 60px;
   }
 
   .form-block--emotions::after {
-    content: "*ОБЯЗАТЕЛЬНЫЕ ПОЛЯ";
+    content: "* — ОБЯЗАТЕЛЬНЫЕ ПОЛЯ";
     position: absolute;
     right: 0;
     bottom: 80px;
@@ -78,17 +87,27 @@
 
 @media (min-width: 1200px) {
 
-  .form-block--experience .form-block__title {
-    text-align: center;
-  }
-
   .form-block--contact {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }
 
-  .form-block--contact .form-block__title {
+  .form-block--name {
+    width: 40%;
+  }
+
+  .form-block__title--contact {
     width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .form-block__title--experience {
+    text-align: center;
+  }
+
+  .form-block__title--visited {
+    width: 35%;
+    margin-bottom: 45px;
   }
 }

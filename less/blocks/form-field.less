@@ -59,7 +59,7 @@
   margin: 0;
   margin-top: 15px;
   margin-bottom: 15px;
-  margin-left: 50px;
+  padding-left: 50px;
   font-size: 18px;
   text-transform: none;
   font-weight: bold;
@@ -71,11 +71,15 @@
   margin: 0;
   margin-top: 15px;
   margin-bottom: 15px;
-  margin-left: 50px;
+  padding-left: 50px;
   font-size: 18px;
   text-transform: none;
   font-weight: bold;
   color: black;
+}
+
+.form-field--emotions {
+  margin-bottom: 40px;
 }
 
 input {
@@ -85,7 +89,6 @@ input {
 
 textarea {
   margin:0 auto;
-  margin-bottom: 40px;
   padding: 0;
   padding-top: 20px;
   padding-left: 20px;
@@ -112,10 +115,18 @@ fieldset {
     margin-bottom: 20px;
   }
 
+  .form-field__label--experience {
+    padding-left: 80px;
+  }
+
+  .form-field__label--visited {
+    padding-left: 80px;
+  }
+
   .form-field-visited-wrapper {
     display: flex;
     flex-wrap: wrap;
-    width: 75%;
+    width: 80%;
     margin: 0 auto;
   }
 
@@ -123,8 +134,16 @@ fieldset {
     width: 40%;
   }
 
-  .form-field__label--experience {
-    margin-left: 75px;
+  .form-field--emotions {
+    margin-bottom: 60px;
+  }
+
+  .form-field--visited:first-of-type {
+    order: -2;
+  }
+
+  .form-field--visited:nth-of-type(3) {
+    order: -1;
   }
 
   .form-field__alert {
@@ -146,6 +165,7 @@ fieldset {
   }
 
   .form-field--contact:first-of-type {
+    position: relative;
     width: 40%;
     margin-left: 0;
   }
@@ -155,11 +175,33 @@ fieldset {
     margin-right: 0;
   }
 
-  .form-field__alert  {
-    display: none;
+  .form-field__label--contact {
+    width: 50%;
+    margin: 0;
   }
 
-  .form-field__label--contact {
+  .resize {
+    width: 30%;
+  }
+
+  .form-field-visited-wrapper {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .form-field--visited {
+    width: 22%;
     margin: 0;
+  }
+  .form-field__label--visited {
+    margin: 0;
+    padding-left: 90px;
+  }
+
+  .form-field__alert {
+    position: absolute;
+    margin: 0;
+    top: -28px;
+    left: 28%;
   }
 }
