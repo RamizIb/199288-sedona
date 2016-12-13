@@ -10,26 +10,26 @@
   color: #ffffff;
   background-color: #81b3d2;
   text-transform: uppercase;
-
-  &:hover {
-    background-color: #669ec0;
-  }
-
-  &:active {
-    background-color: #5496bd;
-  }
 }
 
 .button--nav-closed {
   float: right;
-  height: 21px;
-  width: 23px;
   margin: 17.5px 20px;
+  padding: 0;
   cursor: pointer;
   background-color: transparent;
-  background-image: url(../../img/icon-menu.svg);
-  background-repeat: no-repeat;
-  background-position: center center;
+}
+
+.button--nav-closed svg {
+  fill: #81b3d2;
+}
+
+.button--nav-closed:hover svg {
+  fill: #669ec0;
+}
+
+.button--nav-closed:active svg {
+  fill: #5496bd;
 }
 
 .button--form {
