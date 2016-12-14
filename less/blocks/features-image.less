@@ -1,8 +1,27 @@
 .features-image {
-  height: 260px;
+  height: 258px;
+  overflow: hidden;
 }
 
 .features-image img {
-  height: 260px;
+  display: block;
   width: 100%;
+}
+
+@media (min-width: 768px) {
+
+  .features-image-wrapper {
+    display: flex;
+    width: 100%;
+  }
+
+  .features-image {
+    width: 67%;
+    height: 258px;
+    overflow: hidden;
+  }
+
+  .features-image--replace {
+    order: -1;
+  }
 }

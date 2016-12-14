@@ -1,8 +1,26 @@
 .footer-item {
-  margin: 20px auto;
+  margin: 0 auto;
+  margin-bottom: 35px;
   font-size: 21px;
-  line-height: 26px;
-  text-align: center;
   font-weight: bold;
-  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+
+  .footer-item {
+    margin: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .footer-item {
+    width: 33.33%;
+    padding-left: 60px;
+    text-align: left;
+  }
+
+  .footer-item--photo {
+    padding-left: 74px;
+  }
 }

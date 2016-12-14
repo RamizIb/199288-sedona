@@ -1,16 +1,113 @@
-.form-block {
-  border-bottom: 1px solid lightgrey;
-}
-
 .form-block__title {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  font-size: 18px;
   line-height: 26px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
 }
 
-.form-block:last-child {
-  display: flex;
-  flex-direction: column;
+.form-block {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-.form-block--name {
-  padding: 0 20px;
+.form-block--emotions {
+  padding-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+
+  .form-block--name {
+    width: 45%;
+    order: 1;
+  }
+
+  .form-block--experience {
+    width: 45%;
+    order: 0;
+  }
+
+  .form-block--contact {
+    width: 100%;
+    padding-top: 75px;
+    padding-bottom: 58px;
+    order: 2;
+  }
+
+  .form-block--visited {
+    width: 100%;
+    order: 3;
+  }
+
+  .form-block__title {
+    font-size: 21px;
+  }
+
+  .form-block__title--name {
+    margin-bottom: 50px;
+    text-align: left;
+  }
+
+  .form-block__title--contact {
+    margin-bottom: 30px;
+  }
+
+  .form-block__title--experience {
+    margin-bottom: 50px;
+    text-align: left;
+  }
+
+  .form-block__title--visited {
+    width: 50%;
+  }
+
+  .form-block--emotions {
+    position: relative;
+    width: 100%;
+    padding: 60px 0;
+    order: 4;
+  }
+
+  .form-block__title--emotions {
+    margin: 0 auto;
+    margin-bottom: 60px;
+  }
+
+  .form-block--emotions::after {
+    content: "* — ОБЯЗАТЕЛЬНЫЕ ПОЛЯ";
+    position: absolute;
+    right: 0;
+    bottom: 80px;
+    font-size: 14px;
+    color: #333333;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .form-block--contact {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .form-block--name {
+    width: 40%;
+  }
+
+  .form-block__title--contact {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .form-block__title--experience {
+    text-align: center;
+  }
+
+  .form-block__title--visited {
+    width: 35%;
+    margin-bottom: 45px;
+  }
 }

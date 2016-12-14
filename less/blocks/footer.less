@@ -1,3 +1,28 @@
 .footer {
-  padding: 20px;
+  padding: 30px 0;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 36px 60px;
+  }
+
+  .footer--photo {
+    padding-top: 77px;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .footer--photo {
+    padding-top: 121px;
+    padding-right: 44px;
+  }
 }

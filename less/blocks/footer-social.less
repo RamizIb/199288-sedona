@@ -1,15 +1,39 @@
 .footer-social {
-  margin: 20px auto;
-  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 30px;
 }
 
 .footer-social__link {
   display: inline-block;
-  margin: 10px auto;
-  margin-right: 2px;
   width: 47px;
   height: 47px;
   line-height: 50px;
+  vertical-align: middle;
   background-color: #81b3d2;
-  text-align: center;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+  }
+}
+
+.footer-social__link svg {
+  fill: white;
+}
+
+@media (min-width: 768px) {
+
+  .footer-social {
+    margin: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .footer-social {
+    width: 33.33%;
+  }
 }

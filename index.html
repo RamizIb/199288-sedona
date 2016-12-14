@@ -1,29 +1,46 @@
-
 <!DOCTYPE html>
 <html lang="ru">
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
+
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-
+  <div class="container">
   <header class="header">
 
     <div class="logo">
       <img class="logo__img" src="img/logo-sedona-mobile.svg" width="" height="" alt="">
     </div>
 
-    <nav class="nav">
-      <a class="nav__link nav__link--active" href="index.html">Главная</a>
-      <a class="nav__link" href="photo.html">Фото и видео</a>
-      <a class="nav__link" href="form.html">Форма отзыва</a>
-      <a class="nav__link" href="#">HTML Academy</a>
-    </nav>
+    <ul class="nav">
+      <li class="nav-item">
+        <a class="nav__link nav__link--active" href="index.html">Главная</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav__link" href="photo.html">Фото и видео</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav__link" href="form.html">Форма отзыва</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav__link" href="index.html">HTML Academy</a>
+      </li>
+    </ul>
 
-    <button class="button button--nav" type="button" ></button>
+    <button class="button button--nav-closed" type="button" >
+      <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.928px" height="21.982px" viewBox="0 0 22.928 21.982" enable-background="new 0 0 22.928 21.982" xml:space="preserve">
+        <g>
+          <rect width="22.928" height="3.964"/>
+          <rect y="9.009" width="22.928" height="3.964"/>
+          <rect y="18.018" width="22.928" height="3.964"/>
+        </g>
+      </svg>
+    </button>
     <div class="clear"></div>
 
   </header>
@@ -34,76 +51,82 @@
 
     </div>
 
-    <div class="intro-features">
-      <h2 class="intro-features__title">Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
-      <p class="intro-features__text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
-    </div>
+      <div class="intro-features">
+        <h2 class="intro-features__title">Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
+        <p class="intro-features__text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+      </div>
 
-    <div class="features">
-      <h2 class="features__title">Настоящий городок</h2>
-      <p class="features__number">№1</p>
-      <p class="features__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
-    </div>
+    <div class="features-image-wrapper">
+      <div class="features">
+        <h2 class="features__title">Настоящий городок</h2>
+        <p class="features__number">&#8212; №1 &#8212;</p>
+        <p class="features__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
+      </div>
 
-    <div class="features-image">
-      <img src="img/photo-city@1x.jpg" alt="">
+      <div class="features-image">
+        <img src="img/photo-city@1x.jpg" width="800" height="400" alt="">
+      </div>
     </div>
 
     <div class="features-list">
 
-      <div class="features-item">
+      <div class="features-item features-item--home">
         <h2 class="features-item__title">Жилье</h2>
         <p class="features-item__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
       </div>
 
-      <div class="features-item">
+      <div class="features-item features-item--gift">
         <h2 class="features-item__title">Сувениры</h2>
         <p class="features-item__text">Не только китайского, но и местного производства!</p>
       </div>
 
-      <div class="features-item">
+      <div class="features-item features-item--food">
         <h2 class="features-item__title">Еда</h2>
         <p class="features-item__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
       </div>
 
     </div>
 
-    <div class="features">
-      <h2 class="features__title">Там есть мост дьявола</h2>
-      <p class="features__number">№2</p>
-      <p class="features__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+    <div class="features-image-wrapper">
+      <div class="features">
+        <h2 class="features__title">Там есть мост дьявола</h2>
+        <p class="features__number">&#8212; №2 &#8212;</p>
+        <p class="features__text features__text--resize">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+      </div>
+
+      <div class="features-image features-image--replace">
+        <img src="img/photo-4-mobile@1x.jpg" width="280" height="280" alt="">
+      </div>
     </div>
 
-    <div class="features-image">
-      <img src="img/photo-1-mobile@1x.jpg" alt="">
+    <div class="features-box">
+      <div class="features">
+        <h2 class="features__title">Небольшая площадь</h2>
+        <p class="features__number">&#8212; №3 &#8212;</p>
+        <p class="features__text hyphens-text">Все достопримечательности находятся очень близко</p>
+      </div>
+
+      <div class="features">
+        <h2 class="features__title">Красивая дорога</h2>
+        <p class="features__number">&#8212; №4 &#8212;</p>
+        <p class="features__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+      </div>
+
+      <div class="features">
+        <h2 class="features__title">Мало туристов</h2>
+        <p class="features__number">&#8212; №5 &#8212;</p>
+        <p class="features__text">Большинство едет в Гранд Каньон и толпится там</p>
+      </div>
     </div>
-
-      <div class="features features--background">
-        <h2 class="features__title features__title--color">Небольшая площадь</h2>
-        <p class="features__number features__number--color">№3</p>
-        <p class="features__text features__text--color">Все достопримечательности находятся очень близко</p>
-      </div>
-
-      <div class="features features--background">
-        <h2 class="features__title features__title--color">Красивая дорога</h2>
-        <p class="features__number features__number--color">№4</p>
-        <p class="features__text features__text--color">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-      </div>
-
-      <div class="features features--background">
-        <h2 class="features__title features__title--color">Мало туристов</h2>
-        <p class="features__number features__number--color">№5</p>
-        <p class="features__text features__text--color">Большинство едет в Гранд Каньон и толпится там</p>
-      </div>
 
     <div class="call-to-action">
-      <h2 class="call-to-action__title features__title--color">Заинтересовались?</h2>
+      <h2 class="call-to-action__title">Заинтересовались?</h2>
       <p class="call-to-action__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
       <a href="#" class="button">Найти гостиницу</a>
     </div>
 
     <div class="map">
-      <img class="map__img" src="img/bg-map-mobile@1x.jpg" width="" htight="" alt="">
+
     </div>
 
   </main>
@@ -113,17 +136,34 @@
     <div class="footer-item">#VisitSedona</div>
 
     <div class="footer-social">
-      <a class="footer-social__link" href="#"></a>
-      <a class="footer-social__link" href="#"></a>
-      <a class="footer-social__link" href="#"></a>
+      <a class="footer-social__link" href="#">
+        <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
+          <g id="W6EeEF_1_">
+            <g>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M11.283,0.153c1.736-0.484,3.074,0.264,3.685,1.15 c0.694-0.225,1.372-0.47,2.072-0.69c-0.004,0.841-0.538,1.478-0.883,1.728C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.977-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.319,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.655,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.788,11.283,0.153z"/>
+            </g>
+          </g>
+        </svg>
+      </a>
+      <a class="footer-social__link" href="#">
+        <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.672px" height="18.944px" viewBox="0 0 8.672 18.944" enable-background="new 0 0 8.672 18.944" xml:space="preserve">
+          <path d="M6.275,3.356c0.799,0,1.599,0,2.398,0c0-1.119,0-2.237,0-3.356c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.114 H0v3.518h1.959c0,3.104,0,6.208,0,9.312c1.279,0,2.559,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.114H5.787 C5.765,5.069,5.75,3.709,6.275,3.356z"/>
+        </svg>
+      </a>
+      <a class="footer-social__link" href="#">
+        <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19.979px" height="14.015px" viewBox="0 0 19.979 14.015" enable-background="new 0 0 19.979 14.015" xml:space="preserve">
+          <path d="M17.145,0H2.835C1.275,0,0,1.275,0,2.835v8.345c0,1.56,1.275,2.835,2.835,2.835h14.31c1.56,0,2.835-1.275,2.835-2.835V2.835 C19.979,1.275,18.704,0,17.145,0z M7.036,10.392V3.623l6.769,3.384L7.036,10.392z"/>
+        </svg>
+      </a>
     </div>
 
     <div class="footer-copyright">
       Разработано
-      <img class="logo logo--copyright" src="img/logo-htmlacademy.svg" width="" height="" alt="">
+      <a href="https://htmlacademy.ru"><img class="logo logo--copyright" src="img/logo-htmlacademy.svg" width="" height="" alt=""></a>
     </div>
 
   </footer>
 
+</div>
 </body>
 </html>

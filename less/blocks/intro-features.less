@@ -1,40 +1,147 @@
 .intro-features {
   position: relative;
-  padding: 20px;
+  padding-top: 40px;
+  padding-bottom: 30px;
   line-height: 26px;
-}
-
-.intro-features::after {
-  position: absolute;
-  content: " ";
-  bottom:  -10%;
-  left: 0;
-  height: 40px;
-  width: 100%;
-  background: url(../img/bg-triangle.svg) no-repeat;
+  text-align: center;
 }
 
 .intro-features__title {
+  width: 80%;
+  max-width: 350px;
+  margin: 0 auto;
+  margin-bottom: 35px;
   font-size: 18px;
   font-weight: bold;
-  text-align: center;
-  margin: 20px 10px;
   text-transform: uppercase;
 }
 
 .intro-features__text {
+  width: 80%;
+  max-width: 350px;
+  margin: 0 auto;
   font-size: 14px;
-  text-align: center;
-  margin-top: 20px;
-  text-transform: uppercase;
   color: #333333;
+  text-transform: uppercase;
 }
 
-.intro-features__text--color {
-  margin: 0 2px;
+.intro-features__text--photo {
+  width: 90%;
+  max-width: 450px;
   line-height: 24px;
+}
+
+.intro-features__text--last {
+  width: 80%;
 }
 
 .intro-features__text--form {
+  width: 90%;
+  max-width: 450px;
   line-height: 24px;
+}
+
+.intro-features::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: -30px;
+  height: 50px;
+  background-image: url(../img/bg-triangle.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.intro-features--photo::after {
+  display: none;
+}
+
+.intro-features--form::after {
+  display: none;
+}
+
+.intro-features--photo {
+  padding-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+
+  .intro-features {
+    padding: 50px 0;
+  }
+
+  .intro-features__title {
+    width: 60%;
+    max-width: none;
+    font-size: 21px;
+  }
+
+  .intro-features__text {
+    width: 100%;
+    max-width: none;
+  }
+
+  .intro-features--form {
+    padding-top: 77px;
+    padding-bottom: 86px;
+  }
+
+  .intro-features__title--form {
+    font-size: 30px;
+  }
+
+  .intro-features__text--form {
+    width: 58%;
+  }
+
+  .intro-features--photo {
+    padding: 70px 0;
+  }
+
+  .intro-features__title--photo {
+    width: 100%;
+    font-size: 30px;
+  }
+
+  .intro-features::after {
+  display: none;
+  }
+
+  .intro-features__text--photo {
+    width: 57%;
+    max-width: 550px;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .intro-features__title {
+    width: 450px;
+  }
+
+  .intro-features--photo {
+    padding: 0;
+    padding-top: 73px;
+    padding-bottom: 78px;
+  }
+
+  .big-padding {
+    padding: 0;
+    padding-top: 114px;
+    padding-bottom: 78px;
+  }
+
+  .intro-features__text--photo {
+    width: 37%;
+  }
+
+  .intro-features__text--form {
+    width: 37%;
+  }
+
+  .intro-features--form {
+    padding-top: 114px;
+    padding-bottom: 71px;
+  }
 }
