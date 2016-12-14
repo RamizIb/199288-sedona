@@ -82,17 +82,19 @@
 
           <h2 class="form-block__title form-block__title--contact">Контактная информация:</h2>
 
-          <div class="form-field form-field--contact">
-            <label class="form-field__label form-field__label--contact resize" for="tel">Контактный телефон*:</label>
-            <input class="form-field__input form-field__input--contact" type="tel" id="tel" placeholder="Введите телефон" required pattern="[0-9]{3}-[0-9]{5}">
-            <span class="form-field__tel-icon"></span>
-            <span class="form-field__alert">Ошибка, перепроверьте номер</span>
-          </div>
+          <div class="form-field-contact-wrapper">
+            <div class="form-field form-field--contact">
+            <label class="form-field__label form-field__label--contact" for="tel"><span class="hidden-contact">Контактный</span> телефон*:</label>
+              <input class="form-field__input form-field__input--contact" type="tel" id="tel" placeholder="Введите телефон" required pattern="[0-9]{3}-[0-9]{5}">
+              <span class="form-field__tel-icon"></span>
+              <span class="form-field__alert">Ошибка, перепроверьте номер</span>
+            </div>
 
-          <div class="form-field form-field--contact">
-            <label class="form-field__label form-field__label--contact" for="email">Электронная почта*:</label>
-            <input class="form-field__input form-field__input--contact" type="email" id="email" placeholder="Введите e-mail" required>
-            <span class="form-field__email-icon"></span>
+            <div class="form-field form-field--contact">
+              <label class="form-field__label form-field__label--contact" for="email">Электронная почта*:</label>
+              <input class="form-field__input form-field__input--contact" type="email" id="email" placeholder="Введите e-mail" required>
+              <span class="form-field__email-icon"></span>
+            </div>
           </div>
 
         </fieldset>

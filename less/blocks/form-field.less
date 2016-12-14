@@ -159,29 +159,44 @@ fieldset {
 
 @media (min-width: 1200px) {
 
+  .form-field-contact-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
   .form-field--contact {
     flex-direction: row;
-    align-items: center;
+    width: auto;
+  }
+
+  .form-field__input--contact {
+    width: 317px;
+  }
+
+  .form-field__label--contact {
+    margin: 0;
   }
 
   .form-field--contact:first-of-type {
     position: relative;
-    width: 40%;
     margin-left: 0;
   }
 
   .form-field--contact:last-of-type {
-    width: 50%;
     margin-right: 0;
   }
 
-  .form-field__label--contact {
-    width: 50%;
-    margin: 0;
+  .hidden-contact {
+    display: none;
   }
 
-  .resize {
-    width: 30%;
+  .form-field__alert {
+    position: absolute;
+    order: -1;
+    top: -27px;
+    left: 90px;
   }
 
   .form-field-visited-wrapper {
@@ -196,12 +211,5 @@ fieldset {
   .form-field__label--visited {
     margin: 0;
     padding-left: 90px;
-  }
-
-  .form-field__alert {
-    position: absolute;
-    margin: 0;
-    top: -28px;
-    left: 28%;
   }
 }
