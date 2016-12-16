@@ -8,6 +8,7 @@ ul {
   display: block;
   top: -222px;
   width: 100%;
+
   list-style: none;
   text-align: center;
 }
@@ -20,10 +21,12 @@ ul {
 .nav__link {
   display: block;
   padding: 7px 0;
+
   font-size: 18px;
   font-weight: bold;
   line-height: 40px;
   color: #fff;
+
   background-color: #81b3d2;
   text-transform: uppercase;
   text-decoration: none;
@@ -49,15 +52,15 @@ li:last-child {
 @media (min-width: 768px) {
 
   .nav {
+    position: static;
     display: flex;
     top: 0;
-    position: static;
-
   }
 
   .nav-item {
     width: 20%;
     padding: 15px 0;
+
     border: none;
   }
   .nav-item:nth-child(2) {
@@ -67,11 +70,13 @@ li:last-child {
   .nav__link {
     display: inline;
     padding: 0;
+
     font-size: 14px;
     line-height: 26px;
     font-weight: bold;
-    background-color: #ffffff;
     color: #000000;
+
+    background-color: #ffffff;
 
     &:hover {
       color: #669ec0;

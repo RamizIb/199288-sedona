@@ -3,13 +3,19 @@
   margin: 0 auto;
 }
 
+.space {
+  display: none;
+}
+
 .features-item__title {
   margin: 0;
   margin-bottom: 25px;
+
   font-size: 18px;
   font-weight: bold;
-  text-transform: uppercase;
   line-height: 26px;
+
+  text-transform: uppercase;
 }
 
 .features-item__text {
@@ -17,20 +23,24 @@
   max-width: 450px;
   margin: 0;
   margin-bottom: 35px;
+
   font-size: 14px;
   line-height: 21px;
-  text-transform: uppercase;
   color: #333333;
+
+  text-transform: uppercase;
 }
 
 .features-item--home::before {
   content: "";
-  display: block;
   position: absolute;
+
+  display: block;
   top: -10px;
   left: -50px;
   width: 41px;
   height: 40px;
+
   background-image: url(../../img/icon-house.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -39,12 +49,14 @@
 
 .features-item--gift::before {
   content: "";
-  display: block;
   position: absolute;
+
+  display: block;
   top: -10px;
   left: -50px;
   width: 41px;
   height: 47px;
+
   background-image: url(../../img/icon-gift.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -53,12 +65,14 @@
 
 .features-item--food::before {
   content: "";
-  display: block;
   position: absolute;
+
+  display: block;
   top: -10px;
   left: -50px;
   width: 41px;
   height: 38px;
+
   background-image: url(../../img/icon-burger.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -72,19 +86,21 @@
 @media (min-width: 768px) {
 
   .features-item {
-    width: 33.33%;
+    width: 33.33334%;
     margin: 0;
+
     text-align: center;
   }
 
   .features-item__title {
-    font-size: 21px;
     margin: 0 auto;
     margin-bottom: 30px;
+
+    font-size: 21px;
   }
 
   .features-item__text {
-    width: 65%;
+    width: 166px;
     margin: 0 auto;
   }
 
@@ -93,6 +109,7 @@
     left: 50%;
     width: 75px;
     height: 72px;
+
     margin-left: -37.5px;
 }
 
@@ -101,6 +118,7 @@
     left: 50%;
     width: 64px;
     height: 75px;
+
     margin-left: -37.5px;
 }
 
@@ -109,6 +127,7 @@
     left: 50%;
     width: 75px;
     height: 75px;
+
     margin-left: -37.5px;
 }
 
@@ -117,11 +136,19 @@
   }
 
   .features-item--food .features-item__text {
-    width: 60%;
+    width: 158px;
   }
 }
 
 @media (min-width: 1200px) {
+
+  .space {
+    display: inline;
+  }
+
+  .features-item__text {
+    width: 64%;
+  }
 
   .features-item--food .features-item__text {
     width: 75%;
