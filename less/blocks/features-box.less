@@ -15,20 +15,25 @@
 .features-box .features__number {
   margin: 0 auto;
   margin-bottom: 20px;
+
   color: #333333;
 }
 
-  .features-box .features__text {
+.features-box .features__text {
   width: 80%;
   max-width: 300px;
+
   color: #333333;
 }
 
 @media (min-width: 768px) {
 
   .features-box {
-    padding: 40px 0;
     display: flex;
+
+    padding: 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 
   .features-box .features {
@@ -46,6 +51,10 @@
     margin: 0 auto;
   }
 
+  .features-box .features__number {
+    margin-bottom: 10px;
+  }
+
   .features__text.hyphens-text {
     width: 61%;
     hyphens: auto;
@@ -61,9 +70,5 @@
 
   .features-box .features__text {
     width: 68%;
-  }
-
-  .features-box .features:first-child .features__text {
-
   }
 }

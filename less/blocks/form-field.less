@@ -1,16 +1,20 @@
 .form-field {
   display: flex;
-  margin: 0 auto;
   align-items: baseline;
+
+  margin: 0 auto;
+
   line-height: 26px;
 }
 
 .form-field__label {
   margin-right: 10px;
+
   font-size: 14px;
   line-height: 26px;
-  text-transform: uppercase;
   color: #333333;
+
+  text-transform: uppercase;
 }
 
 .form-field__input {
@@ -18,10 +22,12 @@
   margin: 0 auto;
   padding-top: 15px;
   padding-bottom: 15px;
+
   font-size: 18px;
   line-height: 26px;
   border: none;
   box-sizing: border-box;
+
   background-color: #f2f2f2;
 }
 
@@ -42,8 +48,9 @@
 .form-field__alert {
   margin-left: 20px;
   margin-bottom: 10px;
-  color: red;
+
   font-size: 14px;
+  color: red;
 }
 
 .form-field__input--experience {
@@ -60,10 +67,12 @@
   margin-top: 15px;
   margin-bottom: 15px;
   padding-left: 50px;
+
   font-size: 18px;
-  text-transform: none;
   font-weight: bold;
   color: black;
+
+  text-transform: none;
 }
 
 .form-field__label--visited {
@@ -72,10 +81,12 @@
   margin-top: 15px;
   margin-bottom: 15px;
   padding-left: 50px;
+
   font-size: 18px;
-  text-transform: none;
   font-weight: bold;
   color: black;
+
+  text-transform: none;
 }
 
 .form-field--emotions {
@@ -88,22 +99,26 @@ input {
 }
 
 textarea {
+  display: block;
+  width: 100%;
+  height: 120px;
+
   margin:0 auto;
   padding: 0;
   padding-top: 20px;
   padding-left: 20px;
-  width: 100%;
-  height: 120px;
-  display: block;
-  border: none;
-  box-sizing: border-box;
-  background-color: #f2f2f2;
+
   font-weight: bold;
+  box-sizing: border-box;
+
+  background-color: #f2f2f2;
+  border: none;
 }
 
 fieldset {
-  padding: 0;
   margin: 0;
+  padding: 0;
+
   border: none;
 }
 
@@ -126,6 +141,7 @@ fieldset {
   .form-field-visited-wrapper {
     display: flex;
     flex-wrap: wrap;
+
     width: 80%;
     margin: 0 auto;
   }
@@ -147,9 +163,10 @@ fieldset {
   }
 
   .form-field__alert {
-    order: -1;
     margin-left: auto;
     margin-bottom: -26px;
+
+    order: -1;
   }
 
   textarea {
@@ -163,6 +180,7 @@ fieldset {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+
     width: 100%;
     padding-bottom: 20px;
   }
@@ -196,9 +214,10 @@ fieldset {
 
   .form-field__alert {
     position: absolute;
-    order: -1;
     top: -27px;
     left: 90px;
+
+    order: -1;
   }
 
   .form-field-visited-wrapper {
