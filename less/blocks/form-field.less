@@ -63,11 +63,12 @@
 }
 
 .form-field__label--experience {
+  position: relative;
   width: 100%;
   margin: 0;
   margin-top: 15px;
-  margin-bottom: 15px;
-  padding-left: 50px;
+  margin-bottom: 30px;
+  padding-left: 75px;
 
   font-size: 18px;
   font-weight: bold;
@@ -76,18 +77,87 @@
   text-transform: none;
 }
 
+.form-field__label--experience::before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: 0;
+
+  display: block;
+
+  width: 60px;
+  height: 60px;
+
+  background-image: url(../../img/Shape.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.form-field__label--experience.checked::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 17px;
+
+  display: block;
+
+  width: 25px;
+  height: 25px;
+
+  background-image: url(../../img/dot.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
 .form-field__label--visited {
+  position: relative;
   width: 100%;
   margin: 0;
   margin-top: 15px;
-  margin-bottom: 15px;
-  padding-left: 50px;
+  margin-bottom: 30px;
+  padding-left: 75px;
 
   font-size: 18px;
   font-weight: bold;
   color: black;
 
   text-transform: none;
+}
+
+.form-field__label--visited::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 5px;
+
+  display: block;
+
+  width: 55px;
+  height: 55px;
+
+  background-image: url(../../img/Layer-space.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.form-field__label--visited.checked::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 20px;
+
+  display: block;
+
+  width: 30px;
+  height: 25px;
+
+  background-image: url(../../img/icon-tick.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
 }
 
 .form-field--emotions {
