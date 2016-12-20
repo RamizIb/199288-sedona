@@ -61,17 +61,17 @@
 
           <h2 class="form-block__title form-block__title--name">Представьтесь:</h2>
 
-          <div class="form-field">
+          <div class="form-field form-field--name">
             <label class="form-field__label" for="first-name" >Имя*:</label>
             <input class="form-field__input" type="text" id="first-name" placeholder="Петр" required>
           </div>
 
-          <div class="form-field">
+          <div class="form-field form-field--name">
             <label class="form-field__label" for="last-name">Фамилия*:</label>
             <input class="form-field__input" type="text" id="last-name" placeholder="Иванов" required>
           </div>
 
-          <div class="form-field">
+          <div class="form-field form-field--name">
             <label class="form-field__label" for="middle-name">Отчество:</label>
             <input class="form-field__input" type="text" id="middle-name" placeholder="Александрович">
           </div>
@@ -162,17 +162,19 @@
       </div>
     </form>
 
-      <div class="call-to-action call-to-action--alert">
-        <h2 class="call-to-action__title call-to-action__title--alert">Что-то пошло не так!</h2>
-        <p class="call-to-action__text call-to-action__text--alert">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-        <button class="button button--alert" type="button">Ок</button>
-      </div>
+<div class="call-to-action-wrapper">
+  <div class="call-to-action call-to-action--alert">
+    <h2 class="call-to-action__title call-to-action__title--alert">Что-то пошло не так!</h2>
+    <p class="call-to-action__text call-to-action__text--alert">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+    <button class="button button--alert" type="button">Ок</button>
+  </div>
 
-      <div class="call-to-action call-to-action--success">
-        <h2 class="call-to-action__title call-to-action__title--success">Ваш отзыв отправлен!</h2>
-        <p class="call-to-action__text call-to-action__text--success">Спасибо за Ваше участие, Ваш отзыв уже поступил к нам, в ближайшее время мы опубликуем его на сайте</p>
-        <button class="button button--succes" type="button">Закрыть окно</button>
-      </div>
+  <div class="call-to-action call-to-action--success">
+    <h2 class="call-to-action__title call-to-action__title--success">Ваш отзыв отправлен!</h2>
+    <p class="call-to-action__text call-to-action__text--success">Спасибо за Ваше участие, Ваш отзыв уже поступил к нам, в ближайшее время мы опубликуем его на сайте</p>
+    <button class="button button--succes" type="button">Закрыть окно</button>
+  </div>
+</div>
 
   </main>
 
