@@ -1,16 +1,156 @@
 .video-features {
   display: flex;
+  flex-direction: column;
   width: 100%;
 
   margin: 0 auto;
   padding-bottom: 40px;
 }
 
+.video {
+  margin: 0 auto;
+}
+
+.video-features__timeline {
+  position: relative;
+  top: -48px;
+
+  width: 280px;
+  height: 45px;
+  margin: 0 auto;
+
+  background-image: url(../../img/video-timeline-mobile.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100%;
+}
+
+.video-features__control {
+  position: relative;
+  top: -48px;
+
+  width: 280px;
+  height: 66px;
+  margin: 0 auto;
+
+  background-image: url(../../img/video-control.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100%;
+}
+
+.video-replay {
+  position: absolute;
+  bottom: -40px;
+  left: 25px;
+
+  width: 20px;
+  height: 20px;
+
+  fill: #5c6870;
+  z-index: 1;
+
+  &:hover {
+    fill: #333333;
+  }
+
+  &:active {
+    fill: #c1c1c1;
+  }
+}
+
+.video-subtitle {
+  position: absolute;
+  bottom: -40px;
+  right: 75px;
+
+  width: 32px;
+  height: 20px;
+
+  fill: #5c6870;
+  z-index: 1;
+
+  &:hover {
+    fill: #333333;
+  }
+
+  &:active {
+    fill: #c1c1c1;
+  }
+}
+
+.video-full-screen {
+  position: absolute;
+  bottom: -40px;
+  right: 25px;
+
+  width: 20px;
+  height: 20px;
+
+  fill: #5c6870;
+  z-index: 1;
+
+  &:hover {
+    fill: #333333;
+  }
+
+  &:active {
+    fill: #c1c1c1;
+  }
+}
+
 @media (min-width: 768px) {
 
   .video-features {
+    margin-bottom: -25px;
     padding: 0 60px;
     box-sizing: border-box;
+  }
+
+  .video-features__timeline {
+    position: relative;
+    top: -96px;
+    width: 648px;
+    height: 93px;
+
+    background-image: url(../../img/video-timeline-tablet.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;
+  }
+
+  .video-replay {
+    position: absolute;
+    bottom: 35px;
+    left: 35px;
+
+    width: 20px;
+    height: 20px;
+    fill: #fff;
+  }
+
+  .video-subtitle {
+    position: absolute;
+    bottom: 35px;
+    right: 85px;
+
+    width: 32px;
+    height: 20px;
+    fill: #fff;
+  }
+
+  .video-full-screen {
+    position: absolute;
+    bottom: 35px;
+    right: 35px;
+
+    width: 20px;
+    height: 20px;
+    fill: #fff;
+  }
+
+  .video-features__control {
+    display: none;
   }
 }
 
@@ -18,7 +158,17 @@
 
   .video-features {
     width: 800px;
-    height: 500px;
     padding: 0;
+  }
+
+  .video-features__timeline {
+    top: -96px;
+    width: 800px;
+    height: 93px;
+
+    background-image: url(../../img/video-timeline-tablet.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
   }
 }
