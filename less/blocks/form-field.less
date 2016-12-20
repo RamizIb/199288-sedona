@@ -136,6 +136,40 @@ fieldset {
   background-size: 100%;
 }
 
+.form-field__label--experience:hover::before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: 0;
+
+  display: block;
+
+  width: 60px;
+  height: 60px;
+
+  background-image: url(../../img/Shape-hover.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.form-field__label--experience:active::before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: 0;
+
+  display: block;
+
+  width: 60px;
+  height: 60px;
+
+  background-image: url(../../img/Shape-active.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
 .form-field__label--experience.checked::after {
   content: "";
   position: absolute;
@@ -148,6 +182,23 @@ fieldset {
   height: 25px;
 
   background-image: url(../../img/dot.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.form-field__label--experience.checked:active::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 17px;
+
+  display: block;
+
+  width: 25px;
+  height: 25px;
+
+  background-image: url(../../img/dot-active.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
@@ -185,6 +236,40 @@ fieldset {
   background-size: 100%;
 }
 
+.form-field__label--visited:hover::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 5px;
+
+  display: block;
+
+  width: 55px;
+  height: 55px;
+
+  background-image: url(../../img/Layer-space-hover.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.form-field__label--visited:active::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 5px;
+
+  display: block;
+
+  width: 55px;
+  height: 55px;
+
+  background-image: url(../../img/Layer-space-active.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
 .form-field__label--visited.checked::after {
   content: "";
   position: absolute;
@@ -197,6 +282,23 @@ fieldset {
   height: 25px;
 
   background-image: url(../../img/icon-tick.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.form-field__label--visited.checked:active::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 20px;
+
+  display: block;
+
+  width: 30px;
+  height: 25px;
+
+  background-image: url(../../img/icon-tick-active.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
