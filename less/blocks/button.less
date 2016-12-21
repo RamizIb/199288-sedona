@@ -37,11 +37,15 @@
 .button--progress {
   animation-name: blink;
   animation-duration: 3s;
-  animation-iteration-count: infinite;
 }
 
 .button--find,
-.button--form {
+.button--form,
+.button--alert,
+.button--succes {
+
+  cursor: pointer;
+  outline: none;
 
   &:hover {
     background-color: #669ec0;
@@ -72,12 +76,17 @@
   fill: #81b3d2;
 }
 
-.button--nav-closed:hover svg {
-  fill: #669ec0;
-}
+.button--nav-cross {
+  position: absolute;
+  top: -205px;
+  right: 20px;
 
-.button--nav-closed:active svg {
-  fill: #5496bd;
+  width: 23px;
+  height: 22px;
+  padding: 0;
+
+  cursor: pointer;
+  background-color: transparent;
 }
 
 .button--form {

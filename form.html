@@ -10,39 +10,45 @@
 
 <body>
   <div class="container">
-  <header class="header">
+    <header class="header">
 
-    <div class="logo">
-      <a href="index.html"><img class="logo__img" src="img/logo-sedona-mobile.svg" width="" height="" alt=""></a>
-    </div>
+      <div class="logo">
+        <a href="index.html"><img class="logo__img" src="img/logo-sedona-mobile.svg" width="" height="" alt=""></a>
+      </div>
 
-    <ul class="nav">
-      <li class="nav-item">
-        <a class="nav__link" href="index.html">Главная</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav__link" href="photo.html">Фото и видео</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav__link nav__link--active" href="form.html">Форма отзыва</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav__link" href="https://htmlacademy.ru">HTML Academy</a>
-      </li>
-    </ul>
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav__link" href="index.html">Главная</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav__link" href="photo.html">Фото и видео</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav__link nav__link--active" href="form.html">Форма отзыва</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav__link" href="https://htmlacademy.ru">HTML Academy</a>
+        </li>
+      </ul>
 
-    <button class="button button--nav-closed" type="button" >
-      <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.928px" height="21.982px" viewBox="0 0 22.928 21.982" enable-background="new 0 0 22.928 21.982" xml:space="preserve">
-        <g>
-          <rect width="22.928" height="3.964"/>
-          <rect y="9.009" width="22.928" height="3.964"/>
-          <rect y="18.018" width="22.928" height="3.964"/>
-        </g>
-      </svg>
-    </button>
-    <div class="clear"></div>
+      <button class="button button--nav-closed" type="button" >
+        <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.928px" height="21.982px" viewBox="0 0 22.928 21.982" enable-background="new 0 0 22.928 21.982" xml:space="preserve">
+          <g>
+            <rect width="22.928" height="3.964"/>
+            <rect y="9.009" width="22.928" height="3.964"/>
+            <rect y="18.018" width="22.928" height="3.964"/>
+          </g>
+        </svg>
+      </button>
 
-  </header>
+      <button class="button button--nav-cross" type="button" >
+        <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.199px" height="22.199px" viewBox="0 0 22.199 22.199" enable-background="new 0 0 22.199 22.199" xml:space="preserve">
+          <polygon fill="#fff" points="22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199 22.199,19.396 13.903,11.1 "/>
+        </svg>
+      </button>
+      <div class="clear"></div>
+
+    </header>
 
   <main>
     <div class="intro intro--form">
@@ -105,7 +111,7 @@
 
           <div class="form-field form-field--experience">
             <input class="form-field__input form-field__input--experience" type="radio" name="impression" value="Скорее положительное" id="positive" checked>
-            <label class="form-field__label form-field__label--experience checked" for="positive">Скорее положительное</label>
+            <label class="form-field__label form-field__label--experience" for="positive">Скорее положительное</label>
           </div>
 
           <div class="form-field form-field--experience">
@@ -127,12 +133,12 @@
           <div class="form-field-visited-wrapper">
             <div class="form-field form-field--visited">
               <input class="form-field__input form-field__input--visited" type="checkbox" value="Мост Дьявола" id="bridge" checked>
-              <label class="form-field__label form-field__label--visited checked" for="bridge">Мост Дьявола</label>
+              <label class="form-field__label form-field__label--visited" for="bridge">Мост Дьявола</label>
             </div>
 
             <div class="form-field form-field--visited">
               <input class="form-field__input form-field__input--visited" type="checkbox" value="Слайд-парк" id="park" checked>
-              <label class="form-field__label form-field__label--visited checked" for="park">Слайд-парк</label>
+              <label class="form-field__label form-field__label--visited" for="park">Слайд-парк</label>
             </div>
 
             <div class="form-field form-field--visited">
@@ -142,7 +148,7 @@
 
             <div class="form-field form-field--visited">
               <input class="form-field__input form-field__input--visited" type="checkbox" value="Красные скалы" id="rock" checked>
-              <label class="form-field__label form-field__label--visited checked" for="rock">Красные скалы</label>
+              <label class="form-field__label form-field__label--visited" for="rock">Красные скалы</label>
             </div>
           </div>
 
@@ -216,5 +222,6 @@
   </footer>
 
 </div>
+<script src="js/picturefill.min.js"></script>
 </body>
 </html>
