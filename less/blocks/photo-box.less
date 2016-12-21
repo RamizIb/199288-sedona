@@ -6,6 +6,7 @@
 }
 
 .photo-box {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,6 +17,26 @@
 
   font-size: 14px;
   line-height: 24px;
+}
+
+.photo-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+
+  width: 318px;
+
+  border: 1px solid #e5e5e5;
+}
+
+.photo-box:last-child::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+
+  width: 318px;
+
+  border: 1px solid #e5e5e5;
 }
 
 .photo-box img {
@@ -51,6 +72,7 @@
 
 .photo-box__like-number {
   position: relative;
+  left: 0;
   margin: 0;
   padding-left: 35px;
 
@@ -84,6 +106,11 @@
     padding: 0;
 
     background-color: #f2f2f2;
+    border: none;
+  }
+
+  .photo-box::before,
+  .photo-box:last-child::after {
     border: none;
   }
 

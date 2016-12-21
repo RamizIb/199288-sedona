@@ -50,6 +50,10 @@ fieldset {
   border: none;
 }
 
+.form-field-contact-wrapper {
+  position: relative;
+}
+
 .form-field {
   display: flex;
   align-items: baseline;
@@ -74,8 +78,8 @@ fieldset {
   margin: 0 auto;
   padding-top: 15px;
   padding-bottom: 15px;
-  padding-left: 15px;
-  padding-right: 5px;
+  padding-left: 20px;
+  padding-right: 10px;
 
   font-size: 18px;
   line-height: 26px;
@@ -100,7 +104,41 @@ fieldset {
 }
 
 .form-field__input--contact {
-  padding-left: 20px;
+  padding-right: 58px;
+}
+
+.tel::after {
+  content: "";
+  position: absolute;
+  top: 36px;
+  right: 0;
+
+  display: block;
+  width: 58px;
+  height: 55px;
+
+  background-color: #e6e6e6;
+  background-image: url(../../img/icon-phone.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 35%;
+}
+
+.email::after {
+  content: "";
+  position: absolute;
+  top: 164px;
+  right: 0;
+
+  display: block;
+  width: 58px;
+  height: 55px;
+
+  background-color: #e6e6e6;
+  background-image: url(../../img/icon-mail.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 35%;
 }
 
 .form-field__alert {
@@ -343,6 +381,10 @@ input:checked + .form-field__label--visited::after {
     margin-bottom: 25px;
   }
 
+  .email::after {
+    top: 148px;
+  }
+
   .form-field--experience {
     margin-bottom: 10px;
   }
@@ -449,5 +491,13 @@ input:checked + .form-field__label--visited::after {
   }
   .form-field__label--visited {
     margin: 0;
+  }
+
+  .tel::after {
+    top: 0;
+  }
+
+  .email::after {
+    top: 0;
   }
 }
