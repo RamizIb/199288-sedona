@@ -8,8 +8,8 @@ openBtn.classList.remove("top");
 burger.classList.remove("hidden");
 
 openBtn.addEventListener("click", function() {
- header.classList.add("open");
- openBtn.classList.add("top");
- burger.classList.add("hidden");
- cross.classList.remove("hidden");
+  header.classList.add("open");
+  openBtn.classList.add("top");
+  burger.classList.add("hidden");
+  cross.classList.remove("hidden");
 });
