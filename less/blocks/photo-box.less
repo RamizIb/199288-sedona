@@ -1,8 +1,5 @@
 .photo-box-wrapper {
   margin: 0;
-  padding: 0 20px;
-
-  box-sizing: border-box;
 }
 
 .photo-box {
@@ -11,32 +8,38 @@
   flex-direction: column;
   align-items: center;
 
-  width: 280px;
+  width: 320px;
   margin: 0 auto;
-  padding: 20px 0;
+  padding: 20px 20px;
 
   font-size: 14px;
   line-height: 24px;
+
+  box-sizing: border-box;
 }
 
 .photo-box::before {
   content: "";
   position: absolute;
   top: 0;
+  left: 0;
 
-  width: 318px;
+  width: 100%;
+  height: 1px;
 
-  border: 1px solid #e5e5e5;
+  background: #e5e5e5 ;
 }
 
 .photo-box:last-child::after {
   content: "";
   position: absolute;
   bottom: 0;
+  left: 0;
 
-  width: 318px;
+  width: 100%;
+  height: 1px;
 
-  border: 1px solid #e5e5e5;
+  background: #e5e5e5 ;
 }
 
 .photo-box img {
@@ -50,7 +53,6 @@
 
 .photo-box-description {
   align-self: flex-start;
-  left: 0;
 }
 
 .photo-box__title {
@@ -68,12 +70,11 @@
   margin: 0;
   margin-bottom: 17px;
 
-  color: #333333;
+  color: #333333 ;
 }
 
 .photo-box__like-number {
   position: relative;
-  left: 0;
   margin: 0;
   padding-left: 35px;
 
@@ -95,28 +96,24 @@
     display: flex;
     flex-wrap: wrap;
 
-    width: 100%;
-    max-width: 950px;
+    width: 768px;
     margin: 0 auto;
     padding: 0 60px;
+
+    box-sizing: border-box;
   }
 
   .photo-box {
+    position: static;
     width: 100%;
-    margin: 0 auto;
     padding: 0;
 
-    background-color: #f2f2f2;
-    border: none;
+    background-color: #f2f2f2 ;
   }
 
   .photo-box::before,
   .photo-box:last-child::after {
-    border: none;
-  }
-
-  .photo-box__link {
-    width: 100%;
+    display: none;
   }
 
   .photo-box__link img {
@@ -137,7 +134,6 @@
   }
 
   .photo-box-name {
-    width: 70%;
     flex-grow: 1;
   }
 
@@ -153,23 +149,12 @@
 
   .photo-box__author {
     margin: 0;
-    color: #333333;
+    color: #333333 ;
   }
 
   .photo-box__like-number {
-    padding: 0;
-
     font-weight: bold;
     text-align: right;
-  }
-
-  .photo-box__icon {
-    position: absolute;
-    left: -35px;
-    top: 0;
-
-    width: 24px;
-    height: 22px;
   }
 
   .photo-box--half-size {
@@ -182,13 +167,12 @@
 
   .photo-box-wrapper {
     width: 100%;
-    max-width: 100%;
     padding-left: 0;
     padding-right: 0;
   }
 
   .photo-box:not(:first-child) {
-    width: 33.33334%;
+    width: 33.333333%;
   }
 
   .photo-box {
@@ -201,7 +185,7 @@
 
   .photo-box__author {
     color: #fff;
-  }
+ }
 
   .photo-box__like-number {
     color: #fff;
@@ -214,6 +198,7 @@
   .photo-box-description {
     position: absolute;
     width: 100%;
+    left: 0;
     bottom: 0;
 
     background-color: rgba(0, 0, 0, 0.5);

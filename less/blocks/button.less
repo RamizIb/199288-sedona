@@ -57,35 +57,9 @@
   }
 }
 
-.button-nav-close-wrapper {
-  text-align: right;
-}
-
-.button--nav-closed {
-  display: inline-block;
-
-  max-width: 23px;
-  height: 22px;
-
-  margin-top: 17px;
-  margin-bottom: 17px;
-  margin-left: auto;
-  margin-right: 20px;
-  padding: 0;
-
-  line-height: 0;
-
-  cursor: pointer;
-  background-color: transparent;
-}
-
-.button--nav-closed svg {
-  fill: #81b3d2;
-}
-
-.button--nav-cross {
+.button--open {
   position: absolute;
-  top: -205px;
+  top: 15px;
   right: 20px;
 
   width: 23px;
@@ -94,6 +68,10 @@
 
   cursor: pointer;
   background-color: transparent;
+}
+
+.top {
+  top: -205px;
 }
 
 .button--form {
@@ -121,7 +99,7 @@
     margin: 0 auto;
   }
 
-  .button--nav-closed {
+  .button--close {
     display: none;
   }
 

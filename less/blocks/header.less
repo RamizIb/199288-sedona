@@ -1,13 +1,24 @@
 .header {
   position: relative;
-  margin-top: 220px;
+  min-height: 56px;
 
   background-color: #fff;
+}
+
+.open {
+  margin-top: 220px;
+}
+
+.hidden {
+  display: none;
 }
 
 @media (min-width: 768px) {
 
   .header {
     margin: 0;
+ }
+  .open {
+    margin-top: 0;
   }
 }

@@ -28,9 +28,11 @@
   right: 0;
 
   width: 320px;
+  height: 1px;
+
   margin: 0 auto;
 
-  border-top: 1px solid #e5e5e5;
+  background-color:  #e5e5e5;
 }
 
 .form-block--contact {
@@ -46,9 +48,11 @@
   right: 0;
 
   width: 320px;
+  height: 1px;
+
   margin: 0 auto;
 
-  border-top: 1px solid #e5e5e5;
+  background-color:  #e5e5e5;
 }
 
 .form-block--experience {
@@ -64,9 +68,11 @@
   right: 0;
 
   width: 320px;
+  height: 1px;
+
   margin: 0 auto;
 
-  border-top: 1px solid #e5e5e5;
+  background-color:  #e5e5e5;
 }
 
 .form-block--visited {
@@ -82,9 +88,11 @@
   right: 0;
 
   width: 320px;
+  height: 1px;
+
   margin: 0 auto;
 
-  border-top: 1px solid #e5e5e5;
+  background-color:  #e5e5e5;
 }
 
 .form-block--emotions {
@@ -101,9 +109,11 @@
   right: 0;
 
   width: 320px;
+  height: 1px;
+
   margin: 0 auto;
 
-  border-top: 1px solid #e5e5e5;
+  background-color:  #e5e5e5;
 }
 
 @media (min-width: 768px) {
@@ -115,11 +125,9 @@
 
   .form-block--name::before {
     top: 20px;
-    left: -60px;
+    left: -125%;
+    width: 1px;
     height: 300px;
-
-    border-top: none;
-    border-left: 1px solid #e5e5e5;
   }
 
   .form-block--experience {
@@ -166,7 +174,25 @@
   }
 
   .form-block__title--contact {
+    position: relative;
+    width: 400px;
     margin-bottom: 30px;
+
+    background-color: #ffffff;
+  }
+
+  .form-block__title--contact::before {
+    content: "";
+    position: absolute;
+    top: 11px;
+    left: -123px;
+
+    width: 648px;
+    height: 1px;
+
+    background-color:  #e5e5e5;
+
+    z-index: -1;
   }
 
   .form-block__title--experience {
@@ -175,20 +201,55 @@
   }
 
   .form-block__title--visited {
-    width: 50%;
+    position: relative;
+    width: 400px;
+
+    background-color: #ffffff;
+  }
+
+  .form-block__title--visited::before {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: -123px;
+
+    width: 648px;
+    height: 1px;
+
+    background-color:  #e5e5e5;
+
+    z-index: -1;
   }
 
   .form-block--emotions {
     position: relative;
     width: 100%;
-    padding: 60px 0;
+    padding: 50px 0;
 
     order: 4;
   }
 
   .form-block__title--emotions {
+    position: relative;
+    width: 400px;
     margin: 0 auto;
     margin-bottom: 60px;
+
+    background-color: #ffffff;
+  }
+
+  .form-block__title--emotions::before {
+    content: "";
+    position: absolute;
+    top: 11px;
+    left: -123px;
+
+    width: 648px;
+    height: 1px;
+
+    background-color:  #e5e5e5;
+
+    z-index: -1;
   }
 
   .form-block--emotions::after {
@@ -214,9 +275,17 @@
     width: 40%;
   }
 
+  .form-block--name::before {
+    left: -145%;
+  }
+
   .form-block__title--contact {
-    width: 100%;
-    margin-bottom: 50px;
+    margin-bottom: 55px;
+  }
+
+  .form-block__title--contact::before {
+    left: -282px;
+    width: 960px;
   }
 
   .form-block__title--experience {
@@ -224,7 +293,16 @@
   }
 
   .form-block__title--visited {
-    width: 35%;
-    margin-bottom: 45px;
+    margin-bottom: 55px;
+  }
+
+  .form-block__title--visited::before {
+    left: -282px;
+    width: 960px;
+  }
+
+  .form-block__title--emotions::before {
+    left: -282px;
+    width: 960px;
   }
 }

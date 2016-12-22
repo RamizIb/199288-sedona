@@ -58,6 +58,21 @@ textarea::-webkit-input-placeholder {
   font-weight: bold;
 }
 
+textarea::-moz-placeholder {
+  color: #000000;
+  font-weight: bold;
+}
+
+textarea:-moz-placeholder {
+  color: #000000;
+  font-weight: bold;
+}
+
+textarea:-ms-input-placeholder {
+  color: #000000;
+  font-weight: bold;
+}
+
 fieldset {
   margin: 0;
   padding: 0;
@@ -104,10 +119,7 @@ fieldset {
   background-color: #f2f2f2;
 
   &:focus {
-    box-shadow: 0px -2px 0px 0px #e5e5e5,
-                2px 0px 0px 0px #e5e5e5,
-                0px 2px 0px 0px #e5e5e5,
-              -2px 0px 0px 0px #e5e5e5;
+    box-shadow: inset 0 0 0 2px #e5e5e5;
   }
 }
 
@@ -144,7 +156,7 @@ fieldset {
   height: 58px;
 
   background-color: #e6e6e6;
-  background-image: url(../../img/icon-phone.svg);
+  background-image: url(../img/icon-phone.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 35%;
@@ -161,7 +173,7 @@ fieldset {
   height: 58px;
 
   background-color: #e6e6e6;
-  background-image: url(../../img/icon-mail.svg);
+  background-image: url(../img/icon-mail.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 35%;
@@ -209,7 +221,7 @@ fieldset {
   width: 60px;
   height: 60px;
 
-  background-image: url(../../img/Shape.png);
+  background-image: url(../img/Shape.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
@@ -226,7 +238,7 @@ fieldset {
   width: 60px;
   height: 60px;
 
-  background-image: url(../../img/Shape-hover.png);
+  background-image: url(../img/Shape-hover.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
@@ -243,7 +255,7 @@ fieldset {
   width: 60px;
   height: 60px;
 
-  background-image: url(../../img/Shape-active.png);
+  background-image: url(../img/Shape-active.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
@@ -260,7 +272,7 @@ fieldset {
   width: 25px;
   height: 25px;
 
-  background-image: url(../../img/dot.png);
+  background-image: url(../img/dot.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
@@ -277,7 +289,7 @@ fieldset {
   width: 25px;
   height: 25px;
 
-  background-image: url(../../img/dot-active.png);
+  background-image: url(../img/dot-active.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
@@ -313,7 +325,7 @@ input:checked + .form-field__label--experience::after {
   width: 55px;
   height: 55px;
 
-  background-image: url(../../img/Layer-space.png);
+  background-image: url(../img/Layer-space.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
@@ -330,7 +342,7 @@ input:checked + .form-field__label--experience::after {
   width: 55px;
   height: 55px;
 
-  background-image: url(../../img/Layer-space-hover.png);
+  background-image: url(../img/Layer-space-hover.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
@@ -347,7 +359,7 @@ input:checked + .form-field__label--experience::after {
   width: 55px;
   height: 55px;
 
-  background-image: url(../../img/Layer-space-active.png);
+  background-image: url(../img/Layer-space-active.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
@@ -364,7 +376,7 @@ input:checked + .form-field__label--experience::after {
   width: 30px;
   height: 25px;
 
-  background-image: url(../../img/icon-tick.svg);
+  background-image: url(../img/icon-tick.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
@@ -385,7 +397,7 @@ input:checked + .form-field__label--visited::after {
   width: 30px;
   height: 25px;
 
-  background-image: url(../../img/icon-tick-active.svg);
+  background-image: url(../img/icon-tick-active.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
