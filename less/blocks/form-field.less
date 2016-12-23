@@ -11,24 +11,26 @@ input {
   }
 }
 
+
+input:-ms-input-placeholder {
+  .text-color(@color-black);
+  .font-weight();
+}
+
 input::-moz-placeholder {
-  color: #000000;
-  font-weight: bold;
+  .text-color(@color-black);
+  .font-weight();
 }
 
 input:-moz-placeholder {
-  color: #000000;
-  font-weight: bold;
-}
-
-input:-ms-input-placeholder {
-  color: #000000;
-  font-weight: bold;
+  .text-color(@color-black);
+  .font-weight();
 }
 
 input::-webkit-input-placeholder {
-  color: #000000;
-  font-weight: bold;
+
+  .text-color(@color-black);
+  .font-weight();
 }
 
 textarea {
@@ -43,10 +45,10 @@ textarea {
   padding-right: 10px;
 
   font-family: "PT Sans", Arial, sans-serif;
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: bold;
-  box-sizing: border-box;
+  .font-size(@f-size-18);
+  .line-height(@l-height-26);
+  .font-weight();
+  .border-box();
 
   background-color: #f2f2f2;
   outline: none;
@@ -54,23 +56,23 @@ textarea {
 }
 
 textarea::-webkit-input-placeholder {
-  color: #000000;
-  font-weight: bold;
+  .text-color(@color-black);
+  .font-weight();
 }
 
 textarea::-moz-placeholder {
-  color: #000000;
-  font-weight: bold;
+  .text-color(@color-black);
+  .font-weight();
 }
 
 textarea:-moz-placeholder {
-  color: #000000;
-  font-weight: bold;
+  .text-color(@color-black);
+  .font-weight();
 }
 
 textarea:-ms-input-placeholder {
-  color: #000000;
-  font-weight: bold;
+  .text-color(@color-black);
+  .font-weight();
 }
 
 fieldset {
@@ -88,19 +90,19 @@ fieldset {
   display: flex;
   align-items: baseline;
 
-  margin: 0 auto;
+  .margin-center();
 
-  line-height: 26px;
+  .line-height(@l-height-26);
 }
 
 .form-field__label {
   margin-right: 14px;
 
-  font-size: 14px;
-  line-height: 26px;
-  color: #333333;
+  .font-size(@f-size-14);
+  .line-height(@l-height-26);
+  .text-color(@color-dark-grey);
 
-  text-transform: uppercase;
+  .text-transform();
 }
 
 .form-field__input {
@@ -111,10 +113,10 @@ fieldset {
   padding-left: 20px;
   padding-right: 10px;
 
-  font-size: 18px;
-  line-height: 26px;
+  .font-size(@f-size-18);
+  .line-height(@l-height-26);
   border: none;
-  box-sizing: border-box;
+  .border-box();
 
   background-color: #f2f2f2;
 
@@ -183,8 +185,8 @@ fieldset {
   margin-left: 20px;
   margin-bottom: 10px;
 
-  font-size: 14px;
-  color: red;
+  .font-size(@f-size-14);
+  .text-color(@color-red);
 }
 
 .form-field__input--experience {
@@ -203,9 +205,9 @@ fieldset {
   margin-bottom: 30px;
   padding-left: 75px;
 
-  font-size: 18px;
-  font-weight: bold;
-  color: black;
+  .font-size(@f-size-18);
+  .font-weight();
+  .text-color(@color-black);
 
   text-transform: none;
 }
@@ -307,9 +309,9 @@ input:checked + .form-field__label--experience::after {
   margin-bottom: 30px;
   padding-left: 75px;
 
-  font-size: 18px;
-  font-weight: bold;
-  color: black;
+  .font-size(@f-size-18);
+  .font-weight();
+  .text-color(@color-black);
 
   text-transform: none;
 }

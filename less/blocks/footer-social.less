@@ -1,5 +1,5 @@
 .footer-social {
-  margin: 0 auto;
+  .margin-center();
   margin-bottom: 30px;
 }
 
@@ -8,17 +8,17 @@
   width: 47px;
   height: 47px;
 
-  line-height: 50px;
+  .line-height(@l-height-50);
   vertical-align: middle;
 
-  background-color: #81b3d2;
+  .bg-color(@color-primary);
 
   &:hover {
-    background-color: #669ec0;
+    .bg-color(@button-hover-color);
   }
 
   &:active {
-    background-color: #5496bd;
+    .bg-color(@button-active-color);
   }
 }
 

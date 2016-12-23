@@ -1,18 +1,18 @@
 .button {
   display: block;
 
-  margin: 0 auto;
+  .margin-center();
   padding: 15px 0;
 
-  font-size: 21px;
-  line-height: 26px;
-  font-weight: bold;
-  color: #ffffff;
+  .font-size(@f-size-21);
+  .line-height(@l-height-26);
+  .font-weight();
+  .text-color(@color-white);
 
-  background-color: #81b3d2;
+  .bg-color(@color-primary);
   border: none;
   text-decoration: none;
-  text-transform: uppercase;
+  .text-transform();
 }
 
 .button--disabled {
@@ -48,12 +48,12 @@
   outline: none;
 
   &:hover {
-    background-color: #669ec0;
+    .bg-color(@button-hover-color);
   }
 
   &:active {
     color: #94b9d2;
-    background-color: #5496bd;
+    .bg-color(@button-active-color);
   }
 }
 
@@ -76,7 +76,7 @@
 
 .button--form {
   width: 100%;
-  margin: 0 auto;
+  .margin-center();
 }
 
 .button--alert {
@@ -86,9 +86,9 @@
 
 .button--succes {
   width: 100%;
-  margin: 0 auto;
+  .margin-center();
 
-  font-size: 18px;
+  .font-size(@f-size-18);
   border: 20px solid #f2f2f2;
 }
 
@@ -96,7 +96,7 @@
 
   .button {
     width: 458px;
-    margin: 0 auto;
+    .margin-center();
   }
 
   .button--close {

@@ -4,15 +4,15 @@
 }
 
 .form-block__title {
-  margin: 0 auto;
+  .margin-center();
   margin-bottom: 20px;
 
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: bold;
-  text-align: center;
+  .font-size(@f-size-18);
+  .line-height(@l-height-26);
+  .font-weight();
+  .text-center();
 
-  text-transform: uppercase;
+  .text-transform();
 }
 
 .form-block--name {
@@ -30,9 +30,9 @@
   width: 320px;
   height: 1px;
 
-  margin: 0 auto;
+  .margin-center();
 
-  background-color:  #e5e5e5;
+  .bg-color(@form-decor-color);
 }
 
 .form-block--contact {
@@ -50,9 +50,9 @@
   width: 320px;
   height: 1px;
 
-  margin: 0 auto;
+  .margin-center();
 
-  background-color:  #e5e5e5;
+  .bg-color(@form-decor-color);
 }
 
 .form-block--experience {
@@ -70,9 +70,9 @@
   width: 320px;
   height: 1px;
 
-  margin: 0 auto;
+  .margin-center();
 
-  background-color:  #e5e5e5;
+  .bg-color(@form-decor-color);
 }
 
 .form-block--visited {
@@ -90,9 +90,9 @@
   width: 320px;
   height: 1px;
 
-  margin: 0 auto;
+  .margin-center();
 
-  background-color:  #e5e5e5;
+  .bg-color(@form-decor-color);
 }
 
 .form-block--emotions {
@@ -111,12 +111,28 @@
   width: 320px;
   height: 1px;
 
-  margin: 0 auto;
+  .margin-center();
 
-  background-color:  #e5e5e5;
+  .bg-color(@form-decor-color);
+}
+
+.form-block__requried-info {
+  display: none;
 }
 
 @media (min-width: 768px) {
+
+  .form-block__button-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .form-block__requried-info {
+    display: block;
+
+    .font-size(@f-size-14);
+    .text-color(@color-dark-grey);
+  }
 
   .form-block--name {
     width: 45%;
@@ -170,7 +186,7 @@
 
   .form-block__title--name {
     margin-bottom: 50px;
-    text-align: left;
+    .text-left();
   }
 
   .form-block__title--contact {
@@ -178,7 +194,7 @@
     width: 400px;
     margin-bottom: 30px;
 
-    background-color: #ffffff;
+    .bg-color(@color-white);
   }
 
   .form-block__title--contact::before {
@@ -190,21 +206,21 @@
     width: 648px;
     height: 1px;
 
-    background-color:  #e5e5e5;
+    .bg-color(@form-decor-color);
 
     z-index: -1;
   }
 
   .form-block__title--experience {
     margin-bottom: 50px;
-    text-align: left;
+    .text-left();
   }
 
   .form-block__title--visited {
     position: relative;
     width: 400px;
 
-    background-color: #ffffff;
+    .bg-color(@color-white);
   }
 
   .form-block__title--visited::before {
@@ -216,7 +232,7 @@
     width: 648px;
     height: 1px;
 
-    background-color:  #e5e5e5;
+    .bg-color(@form-decor-color);
 
     z-index: -1;
   }
@@ -235,7 +251,7 @@
     margin: 0 auto;
     margin-bottom: 60px;
 
-    background-color: #ffffff;
+    .bg-color(@color-white);
   }
 
   .form-block__title--emotions::before {
@@ -247,19 +263,9 @@
     width: 648px;
     height: 1px;
 
-    background-color:  #e5e5e5;
+    .bg-color(@form-decor-color);
 
     z-index: -1;
-  }
-
-  .form-block--emotions::after {
-    content: "* — ОБЯЗАТЕЛЬНЫЕ ПОЛЯ";
-    position: absolute;
-    right: 0;
-    bottom: 80px;
-
-    font-size: 14px;
-    color: #333333;
   }
 }
 
@@ -289,7 +295,7 @@
   }
 
   .form-block__title--experience {
-    text-align: center;
+    .text-center();
   }
 
   .form-block__title--visited {

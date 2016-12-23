@@ -36,11 +36,11 @@
         </li>
       </ul>
 
-      <button class="button button--open" type="button">
-        <svg id="cross" x="0px" y="0px" width="22.199px" height="22.199px" viewBox="0 0 22.199 22.199" enable-background="new 0 0 22.199 22.199" xml:space="preserve">
+      <button class="button button--open top" type="button">
+        <svg class="cross" id="cross" x="0px" y="0px" width="22.199px" height="22.199px" viewBox="0 0 22.199 22.199" enable-background="new 0 0 22.199 22.199" xml:space="preserve">
           <polygon fill="#fff" points="22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199 22.199,19.396 13.903,11.1 "/>
         </svg>
-        <svg class="hidden" id="burger" x="0px" y="0px" width="22.928px" height="21.982px" viewBox="0 0 22.928 21.982" enable-background="new 0 0 22.928 21.982" xml:space="preserve">
+        <svg class="burger hidden" id="burger" x="0px" y="0px" width="22.928px" height="21.982px" viewBox="0 0 22.928 21.982" enable-background="new 0 0 22.928 21.982" xml:space="preserve">
           <g fill="#81b3d2">
             <rect width="22.928" height="3.964"/>
             <rect y="9.009" width="22.928" height="3.964"/>
@@ -161,7 +161,10 @@
             <textarea class="form-field__place" placeholder="Опишите подробно все свои восторги"></textarea>
           </div>
 
-          <button class="button button--form" type="submit">Отправить отзыв</button>
+          <div class="form-block__button-wrapper">
+            <button class="button button--form" type="submit">Отправить отзыв</button>
+            <span class="form-block__requried-info">* — ОБЯЗАТЕЛЬНЫЕ ПОЛЯ</span>
+          </div>
 
         </fieldset>
       </div>

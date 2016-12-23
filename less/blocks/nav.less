@@ -10,7 +10,7 @@ ul {
   width: 100%;
 
   list-style: none;
-  text-align: center;
+  .text-center();
 }
 
 .nav-item {
@@ -22,22 +22,22 @@ ul {
   display: block;
   padding: 7px 0;
 
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 40px;
-  color: #fff;
+  .font-size(@f-size-18);
+  .font-weight();
+  .line-height(@l-height-40);
+  .text-color(@color-white);
 
-  background-color: #81b3d2;
-  text-transform: uppercase;
+  .bg-color(@color-primary);
+  .text-transform();
   text-decoration: none;
 
   &:hover {
-    background-color: #669ec0;
+    .bg-color(@button-hover-color);
   }
 
   &:active {
     color: #94b9d2;
-    background-color: #5496bd;
+    .bg-color(@button-active-color);
   }
 }
 
@@ -72,15 +72,15 @@ li:last-child {
     display: inline;
     padding: 0;
 
-    font-size: 14px;
-    line-height: 26px;
-    font-weight: bold;
-    color: #000000;
+    .font-size(@f-size-14);
+    .line-height(@l-height-26);
+    .font-weight();
+    .text-color(@color-black);
 
-    background-color: #ffffff;
+    .bg-color(@color-white);
 
     &:hover {
-      color: #669ec0;
+      .text-color(@button-hover-color);
       background-color: transparent;
   }
 
