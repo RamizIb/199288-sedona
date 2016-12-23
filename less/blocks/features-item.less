@@ -1,6 +1,6 @@
 .features-item {
   position: relative;
-  margin: 0 auto;
+  .margin-center();
 }
 
 .space {
@@ -11,11 +11,11 @@
   margin: 0;
   margin-bottom: 25px;
 
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 26px;
+  .font-size(@f-size-18);
+  .font-weight();
+  .line-height(@l-height-26);
 
-  text-transform: uppercase;
+  .text-transform();
 }
 
 .features-item__text {
@@ -24,11 +24,11 @@
   margin: 0;
   margin-bottom: 35px;
 
-  font-size: 14px;
-  line-height: 21px;
-  color: #333333;
+  .font-size(@f-size-14);
+  .line-height(@l-height-21);
+  .text-color(@color-dark-grey);
 
-  text-transform: uppercase;
+  .text-transform();
 }
 
 .features-item--home::before {
@@ -41,7 +41,7 @@
   width: 41px;
   height: 40px;
 
-  background-image: url(../../img/icon-house.svg);
+  background-image: url(../img/icon-house.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
@@ -52,12 +52,12 @@
   position: absolute;
 
   display: block;
-  top: -10px;
+  top: -15px;
   left: -50px;
   width: 41px;
-  height: 47px;
+  height: 49px;
 
-  background-image: url(../../img/icon-gift.svg);
+  background-image: url(../img/icon-gift.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
@@ -73,7 +73,7 @@
   width: 41px;
   height: 38px;
 
-  background-image: url(../../img/icon-burger.svg);
+  background-image: url(../img/icon-burger-fill.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
@@ -89,19 +89,19 @@
     width: 33.33334%;
     margin: 0;
 
-    text-align: center;
+    .text-center();
   }
 
   .features-item__title {
-    margin: 0 auto;
+    .margin-center();
     margin-bottom: 30px;
 
-    font-size: 21px;
+    .font-size(@f-size-21);
   }
 
   .features-item__text {
     width: 166px;
-    margin: 0 auto;
+    .margin-center();
   }
 
   .features-item--home::before {
@@ -126,7 +126,7 @@
     top: -90px;
     left: 50%;
     width: 75px;
-    height: 75px;
+    height: 76px;
 
     margin-left: -37.5px;
 }
@@ -137,6 +137,10 @@
 
   .features-item--food .features-item__text {
     width: 158px;
+  }
+
+  .space {
+    display: inline;
   }
 }
 

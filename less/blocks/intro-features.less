@@ -4,8 +4,8 @@
   padding-top: 40px;
   padding-bottom: 30px;
 
-  line-height: 26px;
-  text-align: center;
+  .line-height(@l-height-26);
+  .text-center();
 }
 
 .intro-features__title {
@@ -14,10 +14,10 @@
   margin: 0 auto;
   margin-bottom: 35px;
 
-  font-size: 18px;
-  font-weight: bold;
+  .font-size(@f-size-18);
+  .font-weight();
 
-  text-transform: uppercase;
+  .text-transform();
 }
 
 .intro-features__text {
@@ -25,17 +25,17 @@
   max-width: 350px;
   margin: 0 auto;
 
-  font-size: 14px;
-  color: #333333;
+  .font-size(@f-size-14);
+  .text-color(@color-dark-grey);
 
-  text-transform: uppercase;
+  .text-transform();
 }
 
 .intro-features__text--photo {
   width: 90%;
   max-width: 450px;
 
-  line-height: 24px;
+  .line-height(@l-height-24);
 }
 
 .intro-features__text--last {
@@ -46,7 +46,7 @@
   width: 90%;
   max-width: 450px;
 
-  line-height: 24px;
+  .line-height(@l-height-24);
 }
 
 .intro-features::after {
@@ -54,12 +54,13 @@
   position: absolute;
   width: 100%;
   left: 0;
-  bottom: -30px;
+  bottom: -34px;
   height: 50px;
 
   background-image: url(../img/bg-triangle.svg);
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-position: bottom;
+  background-size: 105%;
 }
 
 .intro-features--photo::after {
@@ -87,7 +88,7 @@
     max-width: none;
     margin-bottom: 20px;
 
-    font-size: 21px;
+    .font-size(@f-size-21);
   }
 
   .intro-features__text {
@@ -101,7 +102,7 @@
   }
 
   .intro-features__title--form {
-    font-size: 30px;
+    .font-size(@f-size-30);
   }
 
   .intro-features__text--form {
@@ -116,7 +117,7 @@
 
   .intro-features__title--photo {
     width: 100%;
-    font-size: 30px;
+    .font-size(@f-size-30);
   }
 
   .intro-features::after {

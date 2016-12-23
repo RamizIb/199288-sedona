@@ -1,20 +1,108 @@
+input {
+  padding: 0;
+  outline: none;
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:focus {
+    background-color: transparent;
+  }
+}
+
+
+input:-ms-input-placeholder {
+  .text-color(@color-black);
+  .font-weight();
+}
+
+input::-moz-placeholder {
+  .text-color(@color-black);
+  .font-weight();
+}
+
+input:-moz-placeholder {
+  .text-color(@color-black);
+  .font-weight();
+}
+
+input::-webkit-input-placeholder {
+
+  .text-color(@color-black);
+  .font-weight();
+}
+
+textarea {
+  display: block;
+  width: 100%;
+  height: 160px;
+
+  margin:0 auto;
+  padding: 0;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 10px;
+
+  font-family: "PT Sans", Arial, sans-serif;
+  .font-size(@f-size-18);
+  .line-height(@l-height-26);
+  .font-weight();
+  .border-box();
+
+  background-color: #f2f2f2;
+  outline: none;
+  border: none;
+}
+
+textarea::-webkit-input-placeholder {
+  .text-color(@color-black);
+  .font-weight();
+}
+
+textarea::-moz-placeholder {
+  .text-color(@color-black);
+  .font-weight();
+}
+
+textarea:-moz-placeholder {
+  .text-color(@color-black);
+  .font-weight();
+}
+
+textarea:-ms-input-placeholder {
+  .text-color(@color-black);
+  .font-weight();
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+
+  border: none;
+}
+
+.form-field-contact-wrapper {
+  position: relative;
+}
+
 .form-field {
   display: flex;
   align-items: baseline;
 
-  margin: 0 auto;
+  .margin-center();
 
-  line-height: 26px;
+  .line-height(@l-height-26);
 }
 
 .form-field__label {
   margin-right: 14px;
 
-  font-size: 14px;
-  line-height: 26px;
-  color: #333333;
+  .font-size(@f-size-14);
+  .line-height(@l-height-26);
+  .text-color(@color-dark-grey);
 
-  text-transform: uppercase;
+  .text-transform();
 }
 
 .form-field__input {
@@ -22,14 +110,23 @@
   margin: 0 auto;
   padding-top: 15px;
   padding-bottom: 15px;
-  padding-left: 15px;
+  padding-left: 20px;
+  padding-right: 10px;
 
-  font-size: 18px;
-  line-height: 26px;
+  .font-size(@f-size-18);
+  .line-height(@l-height-26);
   border: none;
-  box-sizing: border-box;
+  .border-box();
 
   background-color: #f2f2f2;
+
+  &:focus {
+    box-shadow: inset 0 0 0 2px #e5e5e5;
+  }
+}
+
+.form-field--name {
+  margin-bottom: 20px;
 }
 
 .form-field--contact {
@@ -43,15 +140,53 @@
 }
 
 .form-field__input--contact {
-  padding-left: 20px;
+  padding-top: 18px;
+  padding-right: 58px;
+  padding-bottom: 19px;
+
+  line-height: 0;
+}
+
+.tel::after {
+  content: "";
+  position: absolute;
+  top: 36px;
+  right: 0;
+
+  display: block;
+  width: 58px;
+  height: 58px;
+
+  background-color: #e6e6e6;
+  background-image: url(../img/icon-phone.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 35%;
+}
+
+.email::after {
+  content: "";
+  position: absolute;
+  top: 166px;
+  right: 0;
+
+  display: block;
+  width: 58px;
+  height: 58px;
+
+  background-color: #e6e6e6;
+  background-image: url(../img/icon-mail.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 35%;
 }
 
 .form-field__alert {
   margin-left: 20px;
   margin-bottom: 10px;
 
-  font-size: 14px;
-  color: red;
+  .font-size(@f-size-14);
+  .text-color(@color-red);
 }
 
 .form-field__input--experience {
@@ -63,64 +198,215 @@
 }
 
 .form-field__label--experience {
+  position: relative;
   width: 100%;
   margin: 0;
   margin-top: 15px;
-  margin-bottom: 15px;
-  padding-left: 50px;
+  margin-bottom: 30px;
+  padding-left: 75px;
 
-  font-size: 18px;
-  font-weight: bold;
-  color: black;
+  .font-size(@f-size-18);
+  .font-weight();
+  .text-color(@color-black);
 
   text-transform: none;
 }
 
+.form-field__label--experience::before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: 0;
+
+  display: block;
+
+  width: 60px;
+  height: 60px;
+
+  background-image: url(../img/Shape.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.form-field__label--experience:hover::before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: 0;
+
+  display: block;
+
+  width: 60px;
+  height: 60px;
+
+  background-image: url(../img/Shape-hover.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.form-field__label--experience:active::before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: 0;
+
+  display: block;
+
+  width: 60px;
+  height: 60px;
+
+  background-image: url(../img/Shape-active.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.form-field__label--experience::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 17px;
+
+  display: none;
+
+  width: 25px;
+  height: 25px;
+
+  background-image: url(../img/dot.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.form-field__label--experience:active::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 17px;
+
+  display: block;
+
+  width: 25px;
+  height: 25px;
+
+  background-image: url(../img/dot-active.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+input:checked + .form-field__label--experience::after {
+  display: block;
+}
+
 .form-field__label--visited {
+  position: relative;
   width: 100%;
   margin: 0;
   margin-top: 15px;
-  margin-bottom: 15px;
-  padding-left: 50px;
+  margin-bottom: 30px;
+  padding-left: 75px;
 
-  font-size: 18px;
-  font-weight: bold;
-  color: black;
+  .font-size(@f-size-18);
+  .font-weight();
+  .text-color(@color-black);
 
   text-transform: none;
+}
+
+.form-field__label--visited::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 5px;
+
+  display: block;
+
+  width: 55px;
+  height: 55px;
+
+  background-image: url(../img/Layer-space.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.form-field__label--visited:hover::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 5px;
+
+  display: block;
+
+  width: 55px;
+  height: 55px;
+
+  background-image: url(../img/Layer-space-hover.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.form-field__label--visited:active::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 5px;
+
+  display: block;
+
+  width: 55px;
+  height: 55px;
+
+  background-image: url(../img/Layer-space-active.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.form-field__label--visited::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 20px;
+
+  display: none;
+
+  width: 30px;
+  height: 25px;
+
+  background-image: url(../img/icon-tick.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+input:checked + .form-field__label--visited::after {
+  display: block;
+}
+
+.form-field__label--visited:active::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 20px;
+
+  display: block;
+
+  width: 30px;
+  height: 25px;
+
+  background-image: url(../img/icon-tick-active.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
 }
 
 .form-field--emotions {
   margin-bottom: 40px;
-}
-
-input {
-  padding: 0;
-  /* font-weight: bold; */
-}
-
-textarea {
-  display: block;
-  width: 100%;
-  height: 120px;
-
-  margin:0 auto;
-  padding: 0;
-  padding-top: 20px;
-  padding-left: 20px;
-
-  font-weight: bold;
-  box-sizing: border-box;
-
-  background-color: #f2f2f2;
-  border: none;
-}
-
-fieldset {
-  margin: 0;
-  padding: 0;
-
-  border: none;
 }
 
 @media (min-width: 768px) {
@@ -129,6 +415,19 @@ fieldset {
     display: flex;
     width: 100%;
     margin-bottom: 20px;
+  }
+
+  .form-field--name {
+    margin-bottom: 25px;
+  }
+
+  .email::after {
+    top: 150px;
+    height: 57px;
+  }
+
+  .form-field--experience {
+    margin-bottom: 10px;
   }
 
   .form-field__label--experience {
@@ -198,6 +497,7 @@ fieldset {
 
   .form-field__label--contact {
     margin: 0;
+    margin-right: 14px;
   }
 
   .form-field--contact:first-of-type {
@@ -232,5 +532,13 @@ fieldset {
   }
   .form-field__label--visited {
     margin: 0;
+  }
+
+  .tel::after {
+    top: 0;
+  }
+
+  .email::after {
+    top: 0;
   }
 }

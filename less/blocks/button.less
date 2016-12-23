@@ -1,64 +1,94 @@
 .button {
   display: block;
 
-  margin: 0 auto;
+  .margin-center();
   padding: 15px 0;
 
-  font-size: 21px;
-  line-height: 26px;
-  font-weight: bold;
-  color: #ffffff;
+  .font-size(@f-size-21);
+  .line-height(@l-height-26);
+  .font-weight();
+  .text-color(@color-white);
 
-  background-color: #81b3d2;
+  .bg-color(@color-primary);
   border: none;
   text-decoration: none;
-  text-transform: uppercase;
+  .text-transform();
 }
 
-.button--nav-closed {
-  float: right;
+.button--disabled {
+  background-color: #e5e5e5;
+}
+
+@keyframes blink {
+
+  33% {
+    background-color: #5496bd;
+  }
+
+  65% {
+    background-color: #3e84ae;
+  }
+
+  100% {
+    background-color: #5496bd;
+  }
+}
+
+.button--progress {
+  animation-name: blink;
+  animation-duration: 3s;
+}
+
+.button--find,
+.button--form,
+.button--alert,
+.button--succes {
+
+  cursor: pointer;
+  outline: none;
+
+  &:hover {
+    .bg-color(@button-hover-color);
+  }
+
+  &:active {
+    color: #94b9d2;
+    .bg-color(@button-active-color);
+  }
+}
+
+.button--open {
+  position: absolute;
+  top: 15px;
+  right: 20px;
 
   width: 23px;
   height: 22px;
-
-  margin: 17.5px 20px;
   padding: 0;
-
-  line-height: 0;
 
   cursor: pointer;
   background-color: transparent;
 }
 
-.button--nav-closed svg {
-  fill: #81b3d2;
-}
-
-.button--nav-closed:hover svg {
-  fill: #669ec0;
-}
-
-.button--nav-closed:active svg {
-  fill: #5496bd;
+.top {
+  top: -205px;
 }
 
 .button--form {
   width: 100%;
-  margin: 0 auto;
+  .margin-center();
 }
 
 .button--alert {
-  width: 60%;
-  margin: 0 auto;
-
+  width: 180px;
   font-size: 18px;
 }
 
 .button--succes {
   width: 100%;
-  margin: 0 auto;
+  .margin-center();
 
-  font-size: 18px;
+  .font-size(@f-size-18);
   border: 20px solid #f2f2f2;
 }
 
@@ -66,15 +96,35 @@
 
   .button {
     width: 458px;
-    margin: 0 auto;
+    .margin-center();
   }
 
-  .button--nav-closed {
+  .button--close {
     display: none;
   }
 
   .button--form {
     width: 50%;
     margin-left: 0;
+  }
+
+  .button--alert {
+    width: 280px;
+  }
+
+  .button--succes {
+    width: 100%;
+
+    border-top: 44px solid #f2f2f2;
+    border-right: 90px solid #f2f2f2;
+    border-bottom: 44px solid #f2f2f2;
+    border-left: 90px solid #f2f2f2;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .button--succes {
+    display: none;
   }
 }
