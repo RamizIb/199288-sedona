@@ -29,41 +29,9 @@
 
 @media (min-width: 1200px) {
 
-  .logo::before {
-    content: "";
-    position: absolute;
+  .logo__img {
+    margin-left: -93px;
 
-    width: 0;
-    height: 0;
-    top: -14%;
-    left: 46%;
-
-    border: 67px solid #81b3d2;
-    border-top-style: none;
-    border-right-color: transparent;
-    border-left-color: transparent;
-    border-radius: 10%;
-
-    z-index: 1;
-    transform: rotate(-49deg);
-  }
-
-  .logo::after {
-    content: "";
-    position: absolute;
-
-    width: 0;
-    height: 0;
-    top: -14%;
-    right: 46%;
-
-    border: 67px solid #81b3d2;
-    border-top-style: none;
-    border-right-color: transparent;
-    border-left-color: transparent;
-    border-radius: 10%;
-
-    z-index: 1;
-    transform: rotate(49deg);
+    z-index: 2;
   }
 }
