@@ -82,10 +82,6 @@ fieldset {
   border: none;
 }
 
-.form-field-contact-wrapper {
-  position: relative;
-}
-
 .form-field {
   display: flex;
   align-items: baseline;
@@ -125,6 +121,11 @@ fieldset {
   }
 }
 
+.form-field-input-wrapper {
+  position: relative;
+  width: 100%;
+}
+
 .form-field--name {
   margin-bottom: 20px;
 }
@@ -150,7 +151,7 @@ fieldset {
 .tel::after {
   content: "";
   position: absolute;
-  top: 36px;
+  top: 0;
   right: 0;
 
   display: block;
@@ -167,7 +168,7 @@ fieldset {
 .email::after {
   content: "";
   position: absolute;
-  top: 166px;
+  top: 0;
   right: 0;
 
   display: block;
@@ -421,9 +422,15 @@ input:checked + .form-field__label--visited::after {
     margin-bottom: 25px;
   }
 
-  .email::after {
-    top: 150px;
-    height: 57px;
+  .form-field--contact {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .form-field__label--contact {
+    width: 40%;
+    order: -2;
   }
 
   .form-field--experience {
@@ -463,10 +470,11 @@ input:checked + .form-field__label--visited::after {
   }
 
   .form-field__alert {
-    margin-left: auto;
-    margin-bottom: -26px;
-
+    width: 40%;
+    margin: 0;
     order: -1;
+
+    text-align: right;
   }
 
   textarea {
@@ -479,6 +487,7 @@ input:checked + .form-field__label--visited::after {
   .form-field-contact-wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
     flex-wrap: wrap;
 
     width: 100%;
@@ -487,25 +496,33 @@ input:checked + .form-field__label--visited::after {
 
   .form-field--contact {
     flex-direction: row;
-    width: auto;
+    width: 45%;
     margin-bottom: 0;
   }
 
-  .form-field__input--contact {
+  .form-field-input-wrapper {
     width: 317px;
   }
 
+  .form-field__input--contact {
+
+  }
+
   .form-field__label--contact {
+    width: auto;
     margin: 0;
-    margin-right: 14px;
+    order: 0;
   }
 
   .form-field--contact:first-of-type {
-    position: relative;
+    flex-wrap: wrap;
+    width: 400px;
     margin-left: 0;
   }
 
   .form-field--contact:last-of-type {
+    flex-wrap: nowrap;
+    width: 480px;
     margin-right: 0;
   }
 
@@ -514,11 +531,11 @@ input:checked + .form-field__label--visited::after {
   }
 
   .form-field__alert {
-    position: absolute;
-    top: -27px;
-    left: 90px;
-
+    width: 100%;
+    margin-bottom: 10px;
     order: -1;
+
+    text-align: center;
   }
 
   .form-field-visited-wrapper {
