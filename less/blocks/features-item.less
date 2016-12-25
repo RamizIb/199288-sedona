@@ -41,7 +41,7 @@
   width: 41px;
   height: 40px;
 
-  background-image: url(../img/icon-house.svg);
+  background-image: url("../img/icon-house.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
@@ -57,7 +57,7 @@
   width: 41px;
   height: 49px;
 
-  background-image: url(../img/icon-gift.svg);
+  background-image: url("../img/icon-gift.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
@@ -73,7 +73,7 @@
   width: 41px;
   height: 38px;
 
-  background-image: url(../img/icon-burger-fill.svg);
+  background-image: url("../img/icon-burger-fill.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
@@ -106,29 +106,32 @@
 
   .features-item--home::before {
     top: -90px;
-    left: 50%;
+    left: 0;
+    right: 0;
     width: 75px;
     height: 72px;
 
-    margin-left: -37.5px;
+    .margin-center();
 }
 
 .features-item--gift::before {
     top: -90px;
-    left: 50%;
+    left: 0;
+    right: 0;
     width: 64px;
     height: 75px;
 
-    margin-left: -37.5px;
+    .margin-center();
 }
 
 .features-item--food::before {
     top: -90px;
-    left: 50%;
+    left: 0;
+    right: 0;
     width: 75px;
     height: 76px;
 
-    margin-left: -37.5px;
+    .margin-center();
 }
 
   .features-item:nth-child(2) {

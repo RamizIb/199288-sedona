@@ -82,10 +82,6 @@ fieldset {
   border: none;
 }
 
-.form-field-contact-wrapper {
-  position: relative;
-}
-
 .form-field {
   display: flex;
   align-items: baseline;
@@ -125,6 +121,11 @@ fieldset {
   }
 }
 
+.form-field__input-wrapper {
+  position: relative;
+  width: 100%;
+}
+
 .form-field--name {
   margin-bottom: 20px;
 }
@@ -147,10 +148,10 @@ fieldset {
   line-height: 0;
 }
 
-.tel::after {
+.form-field__input-wrapper--tel::after {
   content: "";
   position: absolute;
-  top: 36px;
+  top: 0;
   right: 0;
 
   display: block;
@@ -158,16 +159,16 @@ fieldset {
   height: 58px;
 
   background-color: #e6e6e6;
-  background-image: url(../img/icon-phone.svg);
+  background-image: url("../img/icon-phone.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 35%;
 }
 
-.email::after {
+.form-field__input-wrapper--email::after {
   content: "";
   position: absolute;
-  top: 166px;
+  top: 0;
   right: 0;
 
   display: block;
@@ -175,7 +176,7 @@ fieldset {
   height: 58px;
 
   background-color: #e6e6e6;
-  background-image: url(../img/icon-mail.svg);
+  background-image: url("../img/icon-mail.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 35%;
@@ -223,7 +224,7 @@ fieldset {
   width: 60px;
   height: 60px;
 
-  background-image: url(../img/Shape.png);
+  background-image: url("../img/Shape.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
@@ -240,7 +241,7 @@ fieldset {
   width: 60px;
   height: 60px;
 
-  background-image: url(../img/Shape-hover.png);
+  background-image: url("../img/Shape-hover.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
@@ -257,7 +258,7 @@ fieldset {
   width: 60px;
   height: 60px;
 
-  background-image: url(../img/Shape-active.png);
+  background-image: url("../img/Shape-active.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
@@ -274,7 +275,7 @@ fieldset {
   width: 25px;
   height: 25px;
 
-  background-image: url(../img/dot.png);
+  background-image: url("../img/dot.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
@@ -291,7 +292,7 @@ fieldset {
   width: 25px;
   height: 25px;
 
-  background-image: url(../img/dot-active.png);
+  background-image: url("../img/dot-active.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
@@ -327,7 +328,7 @@ input:checked + .form-field__label--experience::after {
   width: 55px;
   height: 55px;
 
-  background-image: url(../img/Layer-space.png);
+  background-image: url("../img/Layer-space.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
@@ -344,7 +345,7 @@ input:checked + .form-field__label--experience::after {
   width: 55px;
   height: 55px;
 
-  background-image: url(../img/Layer-space-hover.png);
+  background-image: url("../img/Layer-space-hover.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
@@ -361,7 +362,7 @@ input:checked + .form-field__label--experience::after {
   width: 55px;
   height: 55px;
 
-  background-image: url(../img/Layer-space-active.png);
+  background-image: url("../img/Layer-space-active.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
@@ -378,7 +379,7 @@ input:checked + .form-field__label--experience::after {
   width: 30px;
   height: 25px;
 
-  background-image: url(../img/icon-tick.svg);
+  background-image: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
@@ -399,7 +400,7 @@ input:checked + .form-field__label--visited::after {
   width: 30px;
   height: 25px;
 
-  background-image: url(../img/icon-tick-active.svg);
+  background-image: url("../img/icon-tick-active.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
@@ -421,9 +422,15 @@ input:checked + .form-field__label--visited::after {
     margin-bottom: 25px;
   }
 
-  .email::after {
-    top: 150px;
-    height: 57px;
+  .form-field--contact {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .form-field__label--contact {
+    width: 40%;
+    order: -2;
   }
 
   .form-field--experience {
@@ -436,14 +443,6 @@ input:checked + .form-field__label--visited::after {
 
   .form-field__label--visited {
     padding-left: 80px;
-  }
-
-  .form-field-visited-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-
-    width: 80%;
-    margin: 0 auto;
   }
 
   .form-field--visited {
@@ -463,10 +462,11 @@ input:checked + .form-field__label--visited::after {
   }
 
   .form-field__alert {
-    margin-left: auto;
-    margin-bottom: -26px;
-
+    width: 40%;
+    margin: 0;
     order: -1;
+
+    text-align: right;
   }
 
   textarea {
@@ -476,36 +476,35 @@ input:checked + .form-field__label--visited::after {
 
 @media (min-width: 1200px) {
 
-  .form-field-contact-wrapper {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-
-    width: 100%;
-    padding-bottom: 20px;
-  }
-
   .form-field--contact {
     flex-direction: row;
-    width: auto;
+    width: 45%;
     margin-bottom: 0;
   }
 
-  .form-field__input--contact {
+  .form-field__input-wrapper {
     width: 317px;
   }
 
+  .form-field__input--contact {
+
+  }
+
   .form-field__label--contact {
+    width: auto;
     margin: 0;
-    margin-right: 14px;
+    order: 0;
   }
 
   .form-field--contact:first-of-type {
-    position: relative;
+    flex-wrap: wrap;
+    width: 400px;
     margin-left: 0;
   }
 
   .form-field--contact:last-of-type {
+    flex-wrap: nowrap;
+    width: 480px;
     margin-right: 0;
   }
 
@@ -514,16 +513,11 @@ input:checked + .form-field__label--visited::after {
   }
 
   .form-field__alert {
-    position: absolute;
-    top: -27px;
-    left: 90px;
-
-    order: -1;
-  }
-
-  .form-field-visited-wrapper {
     width: 100%;
-    justify-content: space-between;
+    margin-bottom: 10px;
+    order: -1;
+
+    text-align: center;
   }
 
   .form-field--visited {
