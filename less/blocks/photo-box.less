@@ -52,6 +52,8 @@
 }
 
 .photo-box__description {
+  max-height: 150px;
+  overflow-y: auto;
   align-self: flex-start;
 }
 
@@ -198,9 +200,16 @@
   .photo-box__description {
     position: absolute;
     width: 100%;
+    max-height: 267px;
+    overflow-y: auto;
+
     left: 0;
     bottom: 0;
 
     background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .photo-box__description--max-height {
+    max-height: 400px;
   }
 }
