@@ -68,15 +68,11 @@ gulp.task("serve", function() {
 	.on("change", server.reload);
 });
 
-gulp.task("build", function(fn) {
-	run("style", "images", "symbols", fn);
-});
-
 gulp.task("copy", function() {
 	return gulp.src([
-		"fonts /** /*.{woff,woff2}",
-		"img /**",
-		"js /**",
+		"fonts/**/*.{woff,woff2}",
+		"img/**",
+		"js/**",
 		"*.html"
 		], {
 			base: "."
