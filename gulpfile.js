@@ -40,7 +40,7 @@ gulp.task("style", function() {
 });
 
 gulp.task("images", function() {
-  return gulp.src("build/img /** /*.{png,jpg,gif}")
+  return gulp.src("build/img/**/*.{png,jpg,gif}")
   .pipe(imagemin([
     imagemin.optipng({optimizationLevel: 3}),
     imagemin.jpegtran({progressive: true})
@@ -63,7 +63,7 @@ gulp.task("serve", function() {
     server: "."
   });
 
-  gulp.watch("less /** /*.less", ["style"]);
+  gulp.watch("less/**/*.less", ["style"]);
   gulp.watch("*.html")
   .on("change", server.reload);
 });
