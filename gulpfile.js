@@ -7,7 +7,6 @@ var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var mqpacker = require("css-mqpacker");
 var minify = require("gulp-csso");
-var rename = require("gulp-rename");
 var imagemin = require("gulp-imagemin");
 var rename = require("gulp-rename");
 var svgstore = require("gulp-svgstore");
